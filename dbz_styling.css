@@ -2,7 +2,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/saiyan-sans');
 
-body {
+.bg-images {
   background-image: url('https://en.dragon-ball-official.com/assets/img/shared/bg_comics_pc.jpg');
   background-size: cover;
   height: 100vh;

@@ -2,32 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- tailwindcss cdn  -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- google fonts cdn  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.cdnfonts.com/css/saiyan-sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.cdnfonts.com/css/saiyan-sans" rel="stylesheet" />
   <!-- fontawesome ware  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- CSS  -->
   <link rel="stylesheet" href="dbz_styling.css">
 
-  <title>DRAGON BALL Z</title>
-
+  <title>About Us | Dragon Ball Super</title>
 </head>
 
-<body class="bg-images">
+<body>
 
-  <header class="p-4 bg-gray-900 dark:text-yellow-500">
+  <!-- HEADER -->
+  <header class="p-4 dark:bg-gray-900 dark:text-yellow-500">
     <div class="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8 font-semibold">
       <ul class="items-stretch hidden space-x-3 md:flex">
         <li class="flex">
-          <a rel="noopener noreferrer" href="#"
-            class="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">HOME</a>
+          <a rel="noopener noreferrer" href="DragonBall Z .html"
+            class="flex items-center px-4 -mb-1 border-b-2 dark:border-">HOME</a>
         </li>
         <li class="flex">
           <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">NEWS</a>
@@ -47,10 +46,11 @@
         <li class="flex">
           <a rel="noopener noreferrer" href="./characters-dbz.html"
             class="flex items-center px-4 -mb-1 border-b-2 dark:border-"><i class="fa-solid fa-person"></i></i><span
-              class="pl-4">CHARACTERS</span></a>
+              class="pl-4 ">CHARACTERS</span></a>
         </li>
         <li class="flex">
-          <a rel="noopener noreferrer" href="about.html" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">ABOUT</a>
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600">ABOUT</a>
         </li>
       </ul>
       <button title="Button" type="button" class="p-4 md:hidden">
@@ -63,176 +63,119 @@
     </div>
   </header>
 
+  <!-- MAIN -->
+  <main class="space-y-12">
+    <h2 class="text-red-600 text-4xl md:text-6xl text-center font-bold mb-8 pt-5 pl-3">History of Dragon Ball Z</h2>
 
-  <main>
+    <!-- ABOUT -->
+    <section class="container mx-auto px-5 py-10 space-y-12">
 
-    <section class="dark:text-gray-800 w-full h-screen bg-center bg-cover" id="hero-banner-gif">
-      <div
-        class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-2 xl:max-w-3xl">
-        <img src="https://fontmeme.com/permalink/250910/55767dbaadee0041b6b205a98bb29185.png" alt="" width="500px">
-        <p class="px-8 mt-8 mb-12 text-lg dbz-heading">POWER UNLEASHED
-          LEGENDS REBORN
-          FOR EVERY FAN</p>
-        <div class="flex flex-wrap justify-center">
-          <button
-            class="px-8 py-3 m-2 text-xl font-semibold rounded bg-yellow-500 dark:text-gray-50 hover:bg-yellow-600"
-            fdprocessedid="0m7fsm">Get started</button>
-          <button
-            class="px-8 py-3 m-2 text-xl border border-purple-900 rounded dark:text-gray-900 dark:border-purple-300"
-            fdprocessedid="dpksj8">Learn more</button>
+      <!-- Section 1: Text Left, Image Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+          <!-- Text content -->
+          <div class="bg-gradient-to-br from-red-500 to-yellow-600 text-white rounded-2xl shadow-xl p-6">
+            <h3 class="text-xl pb-3">📖 Origin & Owner</h3>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+              <li>Creator: Akira Toriyama, legendary Japanese manga artist.</li>
+              <li>First Published: 1984 in Weekly Shōnen Jump (Shueisha).</li>
+              <li>Ownership: Shueisha (manga), Toei Animation (anime), plus various licensing partners like Bandai.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center items-center order-1 lg:order-2">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.cbrimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2024%2F10%2Fakira-toriyama-and-dragon-ball-daima.jpg&f=1&nofb=1&ipt=e42cbf5ef830538e5cad0c64b2ae519527c015d5a2aa441e8a96dceb46f5a4bb"
+            alt="Goku Banner" class="rounded-xl shadow-lg object-cover w-full max-w-md">
         </div>
       </div>
-    </section>
 
-    <!-- Photo Gallery Section -->
-    <section class="py-20 pt-5 ">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <span class="text-rose-600 font-semibold">OUR GALLERY</span>
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4">Special Moments</h2>
-          <p class="max-w-2xl mx-auto text-gray-600 mt-6 text-lg">Some most fired up battles in Dragon Ball Z.</p>
+      <!-- Section 2: Image Left, Text Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div class="flex justify-center items-center order-1 lg:order-1">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffeatured%2Fdragon-ball-z-3izrb2kvqsbl3tun.jpg&f=1&nofb=1&ipt=295bf857e0287f0dfc3c180c838b2cba8e639169303ee834ecc77675f13eceee"
+            alt="Goku Banner" class="rounded-xl shadow-lg object-cover w-full max-w-md">
         </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <!-- Gallery Item 1 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F17%2F43%2Fdc%2F1743dc5149a8562c3e49d4e9322bb49d.jpg&f=1&nofb=1&ipt=fafd0374dfa6de750bd51379370531f765f5052c4d3f8bce93d1dffe58f5a200"
-              alt="Goku vs Vegeta Iconic Battles in history"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">Goku vs Vegeta Iconic Battles in history</h3>
-                <p class="text-white/80 mt-1">June 2023</p>
-              </div>
-            </div>
+        <div class="space-y-6 order-2 lg:order-2">
+          <div class="bg-gradient-to-br from-red-500 to-yellow-600 text-white rounded-2xl shadow-xl p-6">
+            <h3 class="text-xl pb-3">🌱 How It Started</h3>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+              <li>Inspired by the Chinese classic Journey to the West (Sun Wukong → Goku).</li>
+              <li>Began as a comedic adventure following Goku and the Dragon Balls.</li>
+              <li>Evolved into a martial arts + sci-fi epic with larger-than-life battles.</li>
+            </ul>
           </div>
-
-          <!-- Gallery Item 2 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F474x%2Fad%2F8c%2Ffa%2Fad8cfa6e51cf6b8906bb609d83de2d16.jpg&f=1&nofb=1&ipt=0064a85c3742c0fec201273451c8b962b0a4bde26f76aae0c1da710f1bce9751"
-              alt="Super Saiyan Goku vs Full Power Frieza"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">Super Saiyan Goku vs Full Power Frieza</h3>
-                <p class="text-white/80 mt-1">May 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery Item 3 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre00.deviantart.net%2F947a%2Fth%2Fpre%2Ff%2F2018%2F098%2F8%2Fb%2Fback_to_basics__goku_vs_tien_by_ssjgogeto-dc8b0zk.jpg&f=1&nofb=1&ipt=2ecef85f16e6b9ca66c1dde9915c0bc9279fed4ae97cf35fd54cda133baf7581"
-              alt="Kid Goku vs Tien"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">Kid Goku vs Tien</h3>
-                <p class="text-white/80 mt-1">April 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery Item 4 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F5c%2F12%2F71%2F5c127109a12577919840f8d8a403c157.jpg&f=1&nofb=1&ipt=a76de4603b48e83b222b81155f4a40fda820a7b5d041dbf4b1a71c7c42942e17"
-              alt="Goku vs Picolo"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">Goku vs Picolo </h3>
-                <p class="text-white/80 mt-1">March 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery Item 5 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.F04s0sC4DVgrqrKsl0F6ygHaKk%3Fpid%3DApi&f=1&ipt=189eea986d22e6e75dd2a3f74a863fc1c0bd0503d1e6a75502250a813e8ec632"
-              alt="Gohan unlocked SSJ 2 in Cell Saga"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">Gohan unlocked SSJ 2 in Cell Saga</h3>
-                <p class="text-white/80 mt-1">February 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery Item 6 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F21%2F1d%2Ff1%2F211df1de92f6fb97b52ce410e3b6281b.jpg&f=1&nofb=1&ipt=79e28da3e1d248921de483d83e5f55c64d38f224e254038457a0607baf08f60a"
-              alt="Buu Saga battles Buu vs Vegeto"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">in Buu Saga appear Fusion
-                </h3>
-                <p class="text-white/80 mt-1">January 2023</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery Item 7 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FFpAza-TacAMmHvr.jpg&f=1&nofb=1&ipt=fce66afad6259a2f7bc2e106654185fd9fcc4c55d8c81e479fea9700bb223ba6"
-              alt="Award ceremony"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">Vegeta vs Black Goku</h3>
-                <p class="text-white/80 mt-1">December 2022</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gallery Item 8 -->
-          <div class="group relative overflow-hidden rounded-lg aspect-square">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpm1.narvii.com%2F6986%2F9c63d76984650d74eb2d4e78ceb076898b9c6712r1-454-687v2_hq.jpg&f=1&nofb=1&ipt=998c28b47f1f907e7d5c7eb77e2cb9c73ffcd695cf889107a4876e004e7c5267"
-              alt="Office party"
-              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-              <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 class="text-white text-xl font-bold">UI Goku vs Jiren</h3>
-                <p class="text-white/80 mt-1">November 2022</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-16">
-          <a href="characters-dbz.html" target="_blank">
-            <button
-              class="px-8 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors shadow-lg">
-              Load More Photos
-            </button>
-          </a>
         </div>
       </div>
+
+      <!-- Section 3: Text Left, Image Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+          <div class="bg-gradient-to-br from-red-500 to-yellow-600 text-white rounded-2xl shadow-xl p-6">
+            <h3 class="text-xl pb-3">🎥 Evolution</h3>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+              <li>Dragon Ball (1986–1989): Goku’s childhood adventures.</li>
+              <li>Dragon Ball Z (1989–1996): Saiyan, Frieza, Cell, and Majin Buu sagas; global breakout.</li>
+              <li>Dragon Ball GT (1996–1997): Non-canon sequel with mixed reception.</li>
+              <li>Dragon Ball Super (2015–2018): Canon sequel introducing new transformations like Super Saiyan God &
+                Ultra Instinct.</li>
+              <li>Movies: From Broly to Super Hero, box-office hits.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center items-center order-1 lg:order-2">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg03.deviantart.net%2Fcbd6%2Fi%2F2016%2F115%2F2%2F2%2Fson_goku_evolution__db__dbz__dbs_and_eoz__by_sontj-d9x5ovm.png&f=1&nofb=1&ipt=cf0ccc7db7aeb8a5a64315314c9d9ff9a3f4915b093305dd46088920b0c34b9d"
+            alt="Goku Banner" class="rounded-xl shadow-lg object-cover w-auto">
+        </div>
+      </div>
+
+      <!-- Section 4: Image Left, Text Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div class="flex justify-center items-center order-1 lg:order-1">
+          <img
+            src="https://i.pinimg.com/originals/17/12/15/171215571c21691f205c65203fe27f59.gif"
+            alt="Goku Banner" class="rounded-xl shadow-lg object-cover w-full max-w-md">
+        </div>
+        <div class="space-y-6 order-2 lg:order-2">
+          <div class="bg-gradient-to-br from-red-500 to-yellow-600 text-white rounded-2xl shadow-xl p-6">
+            <h3 class="text-xl pb-3">🌍 Popularity</h3>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+              <li>Manga sold 260M+ copies worldwide.</li>
+              <li>Anime dubbed in 80+ countries, with cult followings in the US, Europe, and Latin America.</li>
+              <li>Inspired other shōnen classics and billion-dollar merchandising empire (games, toys, clothing).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Text Left, Image Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+          <div class="bg-gradient-to-br from-red-500 to-yellow-600 text-white rounded-2xl shadow-xl p-6">
+            <h3 class="text-xl pb-3">✨ Inspired</h3>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+              <li>Influenced creators like Masashi Kishimoto (Naruto), Eiichiro Oda (One Piece), and Tite Kubo (Bleach).
+              </li>
+              <li>Set the blueprint for modern shōnen storytelling: epic arcs, transformations, friendship & rivalry
+                dynamics.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center items-center order-1 lg:order-2">
+          <img class=" w-auto"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.cbrimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2021%2F02%2FAnime-Characters-Influenced-By-Goku.jpg&f=1&nofb=1&ipt=26cad9b9df4d1706230124a6d5ffc2825c235bebe64714beb739a797f0b3750a"
+            alt="Goku Banner">
     </section>
 
-    <!-- Popular tags  -->
-    <section class="relative w-full bg-gray-400 bg-dots py-8">
+
+    <!-- TAGS -->
+    <section class="relative w-full bg-gray-400 bg-dots py-8 mb-0">
 
       <!-- Title Overlap -->
       <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
-        <h2 class="bg-black text-white text-xl md:text-4xl font-bold px-6 py-2 uppercase tracking-wider">
+        <h2 class="bg-black text-white sm:text-sm text-xl md:text-4xl font-bold px-6 py-2 uppercase tracking-wider">
           Popular Tags
         </h2>
       </div>
@@ -269,11 +212,13 @@
       </div>
     </section>
 
+    <!-- newsletter  -->
     <section class="w-full mx-auto py-12 px-6 md:px-25 flex flex-col md:flex-row gap-8 bg-white">
 
       <!-- Left Side -->
       <div class="md:w-1/2 space-y-5">
-        <h2 class="text-3xl text-gray-900 font-bold">Follow the official X and be the first to get the latest info!</h2>
+        <h2 class="text-3xl text-gray-900 font-bold">Follow the official X and be the first to get the latest
+          info!</h2>
         <p class="text-lg poppins-semibold">Follow @DB_official_en</p>
         <p class="text-lg poppins-semibold font-normal">
           To view this content, please allow our site to use cookies. <br>
@@ -303,7 +248,7 @@
 
   </main>
 
-
+  <!-- FOOTER -->
   <footer class="dark:bg-gray-900 dark:text-white">
     <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row lg:justify-between dark:divide-gray-600">
       <div class="flex items-center">
@@ -352,8 +297,6 @@
     </div>
   </footer>
 
-
-  <script src="script.js"></script>
 </body>
 
 </html>
