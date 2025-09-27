@@ -47,7 +47,7 @@ The website is themed around Dragon Ball Z, showcasing a few key sections to pra
 ## Installation / Setup
 1. Clone Command 
 ```bash 
-git clone https://https://github.com/RajWebdeveloper-coder/Dragon-Ball-Z.git
+git clone https://github.com/RajWebdeveloper-coder/Dragon-Ball-Z.git
 ```
 
 2. IndependDependencies -> practice ke liye CDN = dependency-free workflow.  
@@ -59,6 +59,4 @@ open <filename>
 
 4. It will open in browser 
 
-
-
-<!-- ### “Just like Goku’s training journey, this project is my first step in powering up as a web developer.”  -->
+## “Just like Goku’s training journey, this project is my first step in powering up as a web developer.” 
