@@ -2,7 +2,7 @@
 <h1>Dragon Ball Z Website</h1>
 
 <!-- images of website -->
-<img width="1317" height="630" alt="image" src="/images/goku_ssj_blue_kioken.jpg"/>
+<img width="1317" height="630" alt="image" src="/images/banner-screenshot.png"/>
 
 
 <!-- puchline -->
@@ -47,7 +47,7 @@ The website is themed around Dragon Ball Z, showcasing a few key sections to pra
 ## Installation / Setup
 1. Clone Command 
 ```bash 
-git clone https://https://github.com/RajWebdeveloper-coder/Dragon-Ball-Z.git
+git clone https://github.com/RajWebdeveloper-coder/Dragon-Ball-Z.git
 ```
 
 2. IndependDependencies -> practice ke liye CDN = dependency-free workflow.  
@@ -59,6 +59,4 @@ open <filename>
 
 4. It will open in browser 
 
-
-
-<!-- ### “Just like Goku’s training journey, this project is my first step in powering up as a web developer.”  -->
+## “Just like Goku’s training journey, this project is my first step in powering up as a web developer.” 
