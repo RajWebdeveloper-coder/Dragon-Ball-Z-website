@@ -2,7 +2,7 @@
 <h1>Dragon Ball Z Website</h1>
 
 <!-- images of website -->
-<img width="1317" height="630" alt="image" src="/images/banner-screenshot.png"/>
+<img width="1317" height="630" alt="image" src="/images/readme-banner.png"/>
 
 
 <!-- puchline -->
