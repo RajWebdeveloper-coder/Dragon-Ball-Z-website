@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krillin | The Strongest Human</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Custom Tailwind configuration for Krillin's colors
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'krillin-orange': '#F7882F', // Signature Gi Orange
+                'destructo-yellow': '#FFD700', // Destructo Disc Yellow/Gold
+                'monk-brown': '#654321',       // Earthy Brown for monk robes/contrast
+                'human-blue': '#1e40af',       // Blue for Earth/human resilience
+              }
+            }
+          }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-gray-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+
+    <h1 class="text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-krillin-orange drop-shadow-[0_0_10px_rgba(247,136,47,0.8)]">
+        KRILLIN – THE STRONGEST HUMAN
+    </h1>
+
+    <p class="text-2xl mt-3 mb-8 text-center font-bold tracking-wider text-destructo-yellow">
+        Master Roshi's Student | Earth's Defender | Goku's Best Friend
+    </p>
+
+    <div class="max-w-4xl w-full flex flex-col lg:flex-row gap-8">
+
+        <div class="bg-gray-800/80 p-6 rounded-xl border-4 border-krillin-orange shadow-2xl shadow-krillin-orange/50 flex-1 transition-all duration-500 hover:bg-gray-700/80">
+            <h2 class="text-3xl font-extrabold text-destructo-yellow mb-4 border-b-2 border-krillin-orange pb-2">Heart, Resilience, and Power</h2>
+            <p class="text-gray-200 text-lg leading-relaxed">
+                **Krillin** may be the strongest human on Earth, but his true strength lies in his **unbreakable spirit and loyalty**. Starting as Goku's competitive rival, he quickly became his closest lifelong friend and an indispensable member of the Z Fighters. Despite often facing enemies vastly superior in power, Krillin **never gives up**. He is renowned for his ingenious, tricky fighting style, his **solar flare** technique, and his razor-sharp **Destructo Disc**, an attack feared by even the most powerful villains, proving that courage often triumphs over raw power levels.
+            </p>
+        </div>
+
+        <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900/80 p-6 rounded-xl border-4 border-destructo-yellow text-center text-destructo-yellow
+            shadow-xl shadow-krillin-orange/70 ring-2 ring-destructo-yellow">
+            
+            <p class="text-xl font-bold tracking-widest uppercase text-human-blue">Greatest Achievement</p>
+            
+            <p class="text-6xl font-black text-monk-brown my-4">
+                HUMAN
+            </p>
+            
+            <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
+                <div class="h-full bg-destructo-yellow rounded-full w-[100%] animate-pulse"></div>
+            </div>
+            
+            <p class="text-sm text-gray-400 mt-2">Maximum power achieved by a pure human.</p>
+            
+            <div class="mt-6 border-t border-gray-700 pt-4">
+                <p class="text-lg font-semibold text-human-blue">Signature Attack:</p>
+                <p class="text-2xl font-extrabold text-destructo-yellow">Destructo Disc</p>
+                <p class="text-sm font-semibold text-gray-500">(Kienzan)</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div
+        class="mt-12 w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-8 border-krillin-orange shadow-2xl shadow-destructo-yellow/80 transition-transform hover:scale-[1.01] duration-300">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/6Vo9bxC_P1Q?si=hmqPL-gUC00jyO-t"
+            title="Krillin's Most Badass Moments" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <footer class="mt-16 text-gray-400 text-md text-center border-t border-gray-700 pt-4 max-w-4xl w-full">
+        &copy; 2025 Earth's Martial Arts School | Motto: **Never Stop Fighting**
+    </footer>
+
+</body>
+
+</html>

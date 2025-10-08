@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broly | The Legendary Saiyan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Custom Tailwind configuration for Broly's theme (Vibrant Green and Primal Purple)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lssj-green': '#39FF14', // Vibrant Neon Green (Legendary Super Saiyan Energy)
+                        'primal-purple': '#4B0082', // Deep Violet/Indigo (Armor/Clothing)
+                        'savage-black': '#0A0A0A', // Ultra Dark Base
+                        'rage-red': '#C52828', // Red for uncontrolled fury
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-savage-black text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+
+    <h1 class="text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-lssj-green drop-shadow-[0_0_15px_rgba(57,255,20,0.9)]">
+        BROLY
+    </h1>
+
+    <p class="text-2xl mt-3 mb-8 text-center font-bold tracking-wider text-primal-purple">
+        The Legendary Super Saiyan | Uncontrollable Power | Pure Rage
+    </p>
+
+    <div class="max-w-4xl w-full flex flex-col lg:flex-row gap-8">
+
+        <div class="bg-gray-900/90 p-6 rounded-xl border-4 border-lssj-green shadow-2xl shadow-lssj-green/60 flex-1 transition-all duration-500 hover:bg-gray-800/90">
+            <h2 class="text-3xl font-extrabold text-primal-purple mb-4 border-b-2 border-lssj-green pb-2">Unmatched, Cataclysmic Strength</h2>
+            <p class="text-gray-200 text-lg leading-relaxed">
+                **Broly** is a Saiyan survivor with a unique genetic mutation, born with a power level far exceeding even the King of all Saiyans. His immense, **uncontrollable power** manifested in the fearsome **Legendary Super Saiyan** form, where his strength and stature grow exponentially with his rage. Driven by trauma and manipulation in the original timeline, or simply raw, primal power in the modern continuity, Broly represents the absolute pinnacle of Saiyan destructive capability. He is a walking cataclysm, whose very existence threatens the stability of the universe.
+            </p>
+        </div>
+
+        <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900/80 p-6 rounded-xl border-4 border-primal-purple text-center text-lssj-green
+            shadow-xl shadow-lssj-green/90 ring-2 ring-rage-red">
+            
+            <p class="text-xl font-bold tracking-widest uppercase text-primal-purple">Power State</p>
+            
+            <p class="text-6xl font-black text-rage-red my-4">
+                RAGE
+            </p>
+            
+            <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
+                <div class="h-full bg-lssj-green rounded-full w-[100%] animate-ping duration-1000"></div>
+            </div>
+            
+            <p class="text-sm text-gray-400 mt-2">Power Level: Increasing. Control Status: Unstable.</p>
+            
+            <div class="mt-6 border-t border-gray-700 pt-4">
+                <p class="text-lg font-semibold text-primal-purple">Signature Technique:</p>
+                <p class="text-2xl font-extrabold text-lssj-green">Eraser Cannon</p>
+                <p class="text-sm font-semibold text-gray-500">(Pure Ki Destruction)</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div
+        class="mt-12 w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-8 border-lssj-green shadow-2xl shadow-rage-red/80 transition-transform hover:scale-[1.01] duration-300">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/RSUvk0cvgbo?si=83exf4rZGqZ8CV8-"
+            title="Broly vs Gogeta - Final Battle (Dragon Ball Super: Broly)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <footer class="mt-16 text-gray-400 text-md text-center border-t border-gray-700 pt-4 max-w-4xl w-full">
+        &copy; 2025 Planet Vampa Survivor | Mission: **Destroy Everything**
+    </footer>
+
+</body>
+
+</html>

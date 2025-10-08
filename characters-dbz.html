@@ -7,19 +7,36 @@
     <meta name="keyword" content="dragon-ball-official,Dragon Ball Z, DBZ, dbz, Father of all Anime">
     <meta name="description" content="This website is based on Dragon Ball Fan">
     <meta name="author" content="Rajkumar Chaturvedi">
-    <!-- tailwindcss cdn  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/icon">
+
+    <meta name="og:title" content="Dragon Ball Z | UnOfficial">
+    <meta name="og:description" content="This website is based on Dragon Ball Fan">
+    <meta property="og:site_name" content="Rajkumar">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="800">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <title>Character Page | DRAGON BALL Z</title>
+    <title>CHARACTERS PAGE | DRAGON BALL Z UNOFFICIAL SITE</title>
 
 </head>
 
 <body class="bg-[url(https://en.dragon-ball-official.com/assets/img/shared/bg_comics_pc.jpg)] ">
 
 
-    <!-- navbar  -->
     <header class="p-4 dark:bg-gray-900 dark:text-yellow-500 pt-6 ">
         <div class="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8 font-semibold">
             <ul class="items-stretch hidden space-x-3 md:flex">
@@ -28,7 +45,7 @@
                         class="flex items-center px-4 -mb-1 border-b-2 dark:border-">HOME</a>
                 </li>
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#"
+                    <a rel="noopener noreferrer" href="news.html"
                         class="flex items-center px-4 -mb-1 border-b-2 dark:border-">NEWS</a>
                 </li>
                 <li class="flex">
@@ -65,177 +82,409 @@
         </div>
     </header>
 
-    <main>
+    <main class="pt-10 mx-auto">
 
-        <!-- heading  -->
         <section class="px-4 mx-auto max-w-7xl mt-20">
             <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
                 <h1
                     class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
                     <span
-                        class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 lg:inline">Here's
-                        to the crazy ones</span>
+                        class="block w-full text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600 lg:inline">MEET
+                        THE Z-FIGHTERS!</span>
                 </h1>
             </div>
 
         </section>
 
-        <!-- light box  -->
-        <section class="py-20 ">
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-            <div x-data="{
-        imageGalleryOpened: false,
-        imageGalleryActiveUrl: null,
-        imageGalleryImageIndex: null,
-        imageGalleryOpen(event) {
-            this.imageGalleryImageIndex = event.target.dataset.index;
-            this.imageGalleryActiveUrl = event.target.src;
-            this.imageGalleryOpened = true;
-        },
-        imageGalleryClose() {
-            this.imageGalleryOpened = false;
-            setTimeout(() => this.imageGalleryActiveUrl = null, 300);
-        },
-        imageGalleryNext(){
-            if(this.imageGalleryImageIndex == this.$refs.gallery.childElementCount){
-                this.imageGalleryImageIndex = 1;
-            } else {
-                this.imageGalleryImageIndex = parseInt(this.imageGalleryImageIndex) + 1;
-            }
-            this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
-        },
-        imageGalleryPrev() {
-            if(this.imageGalleryImageIndex == 1){
-                this.imageGalleryImageIndex = this.$refs.gallery.childElementCount;
-            } else {
-                this.imageGalleryImageIndex = parseInt(this.imageGalleryImageIndex) - 1;
-            }
-
-            this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
-            
-        }
-    }" @image-gallery-next.window="imageGalleryNext()" @image-gallery-prev.window="imageGalleryPrev()"
-                @keyup.right.window="imageGalleryNext();" @keyup.left.window="imageGalleryPrev();" x-init="
-        imageGalleryPhotos = $refs.gallery.querySelectorAll('img');
-        for(let i=0; i<imageGalleryPhotos.length; i++){
-            imageGalleryPhotos[i].setAttribute('data-index', i+1);
-        }
-    " class="w-full h-full select-none">
-                <div class="max-w-7xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view mx-auto px-4 sm:px-6 lg:px-8"
-                    style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                    <ul x-ref="gallery" id="gallery"
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 xs:ml-20 xs:mr-20">
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdqwalls.com%2Fwallpapers%2Fdragon-ball-super-goku-5k-6u.jpg&f=1&nofb=1&ipt=93d3729817c56989b54dc76d17e7e12010d0aa784a7a219c0b8321b767e69b5a"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 01"></li>
-
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.QjMNSN-F6AjqRoMC22_edgHaH8%3Fr%3D0%26pid%3DApi&f=1&ipt=20febbfa3f1781f5b4ea4375572956c049debd6cd8d0c248a36a013affb52791"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 07"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages2.wikia.nocookie.net%2F__cb20110923030338%2Fdragonball%2Fes%2Fimages%2F0%2F06%2FGoku_SSJ4v2_Trans.png&f=1&nofb=1&ipt=db69bb7e473f0189c0f29e63ee67cdf6c0ae1a4c0d48d641b6aa35f5a99e2472"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 08"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fdragonball%2Fimages%2F1%2F19%2FDragon_ball_kid_goku_24_by_superjmanplay2-d63yip7.png%2Frevision%2Flatest%2Fscale-to-width-down%2F2000%3Fcb%3D20130519160459%26path-prefix%3Des&f=1&nofb=1&ipt=33597f4b5002efdb2bd3303186678604e2d264a97ef41112c08bc519131fd0f9"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 09"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F19%2F47%2Fae%2F1947aea96dd8ad36ae87bd0da2c95152.jpg&f=1&nofb=1&ipt=d51a997a365cff59c6a861b681c903252d7df32cc423f1987e9493764bc5e627"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp9559838.jpg&f=1&nofb=1&ipt=a6f96a736078548153726255594b0931b94a3c1e260ff850afd22db646ef8417"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg03.deviantart.net%2Fff06%2Fi%2F2016%2F115%2F1%2F0%2Fssg_goku_drawing_by_steenmcg-da06nx2.jpg&f=1&nofb=1&ipt=74c5120dd7c22f3c528f7b6ef496f896bfc675abc5da79d9ea694d59f605f2b1"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 06"></li>
-
-
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F2d%2Fc9%2F63%2F2dc96345c1318abec1ff042da00a44d0.jpg&f=1&nofb=1&ipt=f084c44c5b67ba24597fcd7bd65653785bff5105d1c2a8caceeab4757566b2f8"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 07"></li>
-
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdqwalls.com%2Fwallpapers%2Fdragon-ball-super-vegeta-3e.jpg&f=1&nofb=1&ipt=5d8bf7069a01d3ce992bca33bd3f9075cfc68ea4d3a0ad811590f22e99e4b1e8"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 08"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F4f7a9bbb-74f5-4a0f-8907-7d1c875d1b4c%2Fde6d7fg-76842b1d-4455-4ad8-8d24-22676a96dcb6.jpg%2Fv1%2Ffill%2Fw_1192%2Ch_670%2Cq_70%2Cstrp%2Flr_vegeta_thumbnail__saiyan_saga__by_sotozeppeli_de6d7fg-pre.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNGY3YTliYmItNzRmNS00YTBmLTg5MDctN2QxYzg3NWQxYjRjXC9kZTZkN2ZnLTc2ODQyYjFkLTQ0NTUtNGFkOC04ZDI0LTIyNjc2YTk2ZGNiNi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VjI_tl96t5-WYTnoErX4Jgdp6WwPSYI4Qu4AFHKjHhM&f=1&nofb=1&ipt=d9ccd8a7a526db19aa9485d2c15832f2b707212cc981f1e6a3afe54217a4f62e"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 09"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig05.deviantart.net%2Fede4%2Ff%2F2016%2F070%2Fd%2F7%2Fgohan_turns_ssj2_for_the_first_time_by_zika_arts-d9uprtv.png&f=1&nofb=1&ipt=fb2fb6acd23ebc7aaf94dced83012351bdd2694d30c83b4eec8e019ca06898e6"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-
-
-
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fssj4-gogeta-charging-attack-duizx1m5zp1wq49v.jpg&f=1&nofb=1&ipt=47a66f52160d9c45ad97bd595602dfdce719f28c708e21b21a433674615db7e6"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Fvegito-dragon-ball-1920x1080-17072.jpeg&f=1&nofb=1&ipt=86ea1f9520a0c460392796c5ca7caf90b31e51bda03d5d82cd74aeecda5a75e8"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.bandainamcoent.eu%2Fhigh%2Fdragon-ball%2Fdragonball-fighters-z%2F01-videos%2F29-dbfz_piccolo.jpg&f=1&nofb=1&ipt=b27053dfc93bdd94fa3fd94fa32b4a4a868bee800c4820db80add21b308a2813"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fa%2Fd%2F1%2F83791.jpg&f=1&nofb=1&ipt=ce42a3942d7c24589a21f229d0faf3c5037a20daf4b86c9dfd85e63b707a75c6"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2Fc3279e87-8a42-4f43-96e4-136be2f85708%2Fdfd1jxb-e8a6a56e-68ee-4e65-b591-01eeefc6aea3.jpg%2Fv1%2Ffill%2Fw_918%2Ch_871%2Cq_70%2Cstrp%2Fgohan_bestia_by_davidferres_dfd1jxb-pre.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIxNSIsInBhdGgiOiJcL2ZcL2MzMjc5ZTg3LThhNDItNGY0My05NmU0LTEzNmJlMmY4NTcwOFwvZGZkMWp4Yi1lOGE2YTU2ZS02OGVlLTRlNjUtYjU5MS0wMWVlZWZjNmFlYTMuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.F3nV5P3AsTiknBlvlvNcigze3Wjp4ASBjAyW2ECl8uk&f=1&nofb=1&ipt=9629c8b0be8e68ea5ad3ab9e511ba9393795459c225f45e084e06f351661d789"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-                        <li><img x-on:click="imageGalleryOpen"
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F9856.jpg&f=1&nofb=1&ipt=f1872ea56acfe5d69ffa48856bdc9d9d9f3bab0e7370eaa3a154539a1d29dfe5"
-                                class="object-cover select-none w-full h-auto bg-gray-200 rounded cursor-zoom-in aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4]"
-                                alt="photo gallery image 10"></li>
-
-                    </ul>
-                </div>
-                <template x-teleport="body">
-                    <div x-show="imageGalleryOpened" x-transition:enter="transition ease-in-out duration-300"
-                        x-transition:enter-start="opacity-0" x-transition:leave="transition ease-in-in duration-300"
-                        x-transition:leave-end="opacity-0" @click="imageGalleryClose"
-                        @keydown.window.escape="imageGalleryClose" x-trap.inert.noscroll="imageGalleryOpened"
-                        class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-50 select-none cursor-zoom-out"
-                        x-cloak>
-                        <div class="relative flex items-center justify-center w-11/12 xl:w-4/5 h-11/12">
-                            <div @click="$event.stopPropagation(); $dispatch('image-gallery-prev')"
-                                class="absolute left-0 flex items-center justify-center text-white translate-x-10 rounded-full cursor-pointer xl:-translate-x-24 2xl:-translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
-                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.75 19.5L8.25 12l7.5-7.5" />
-                                </svg>
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-yellow-500/50 transition duration-300 transform hover:scale-[1.03] hover:shadow-yellow-400/80">
+                        <a href="./goku-page.html" target="_blank" class="block">
+                            <img src="https://wallpaperaccess.com/full/9856.jpg"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Goku SSJ Blue Kioken X20">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-yellow-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    SON GOKU
+                                </span>
                             </div>
-                            <img x-show="imageGalleryOpened" x-transition:enter="transition ease-in-out duration-300"
-                                x-transition:enter-start="opacity-0 transform scale-50"
-                                x-transition:leave="transition ease-in-in duration-300"
-                                x-transition:leave-end="opacity-0 transform scale-50"
-                                class="object-contain object-center w-full h-full select-none cursor-zoom-out"
-                                :src="imageGalleryActiveUrl" alt="" style="display: none;">
-                            <div @click="$event.stopPropagation(); $dispatch('image-gallery-next');"
-                                class="absolute right-0 flex items-center justify-center text-white -translate-x-10 rounded-full cursor-pointer xl:translate-x-24 2xl:translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
-                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
+                        </a>
+                    </li>
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-pink-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./Chichi-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.4nJQ1G-dmj7H9BAyeVoWzQHaL-%3Fcb%3D12%26pid%3DApi&f=1&ipt=2fb338b25c8ae83ae1e6c45db067ea4300e18f16e019725808eef82420f582ec&ipo=images"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Chichi">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-pink-900 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Chichi
+                                </span>
                             </div>
-                        </div>
-                    </div>
-                </template>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-blue-500/50 transition duration-300 transform hover:scale-[1.03] hover:shadow-blue-400/80">
+                        <a href="./vegeta-page.html" target="_blank" class="block">
+                            <img src="https://hdqwalls.com/wallpapers/dragon-ball-super-vegeta-3e.jpg"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Vegeta SSJ Blue Evolution">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-blue-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    PRINCE VEGETA
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-pink-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./Bulma-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Flegendsofthemultiuniverse%2Fimages%2F5%2F50%2F5uVyN3K.png%2Frevision%2Flatest%3Fcb%3D20170110150149&f=1&nofb=1&ipt=448b2651687cae3b4df486353accbc861761641ecabf0d4f1d778b9533ba5482"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Bulma">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-green-300 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Bulma
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-purple-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./son-gohan-page.html" target="_blank" class="block">
+                            <img src="https://i.pinimg.com/originals/19/47/ae/1947aea96dd8ad36ae87bd0da2c95152.jpg"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Son Gohan">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Son Gohan
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-purple-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./bardock-page.html" target="_blank" class="block">
+                            <img src=" https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F31%2F52%2FlGfqY0.gif&f=1&nofb=1&ipt=08279cb53ccf758b88cc5c89cd8bebf3f8828b1eb4c7452a4523b1679ae8b6f6"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Bardock">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Bardock
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-purple-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./goten-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F62%2Fdf%2Fda%2F62dfdaecf5bca10b1de6da2386f9f129.jpg&f=1&nofb=1&ipt=8c848b7e3d6f8d138a19bd8575d2a5ae32aaabdebe195d912b51d217ddc96602"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Goten">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Kid Goten
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-purple-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./kid-trunks-page.html" target="_blank" class="block">
+                            <img src=" https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2478385.png&f=1&nofb=1&ipt=35fe8312723825672dfe17acd267d41b48b2e6a1254c899b3cf6ad78addbb4f6"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Kid Trunks">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Kid Trunks
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-orange-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./future-trunks-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fdbz-dokkanbattle%2Fimages%2F9%2F9b%2FSSRSTRTrunksArt.png%2Frevision%2Flatest%3Fcb%3D20161226120931&f=1&nofb=1&ipt=6feb1a718640d3c93d241579243bcddd038e0e4e585bb470e79ff2f80ee12b1a"
+                                class="object-top w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Future Trunks">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-orange-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Future Trunks
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-green-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./piccolo-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.civitai.com%2FxG1nkqKTMzGDvpLrqFT7WA%2F672266c8-4109-43f0-bab0-cf7674a30d15%2Fwidth%3D1200%2F672266c8-4109-43f0-bab0-cf7674a30d15.jpeg&f=1&nofb=1&ipt=4831a8d042beb17415e270c9f98e9ac8ac5a9d9ab8e5cbec47194cf820c08d60"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Piccolo">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-green-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    PICCOLO
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-orange-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./kirlin-page.html" target="_blank" class="block">
+                            <img src="images/Kirlin.jpeg"
+                                class="object-top w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Krilin">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-orange-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    KIRILIN
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-lime-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./android-18-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngkey.com%2Fpng%2Fdetail%2F245-2454569_android-18-super-android-18-dragon-ball-super.png&f=1&nofb=1&ipt=7ec992c12f82c77df887eede716bfbf36ed73d98424bb04c46b18baf757eba22"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Android 18">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-lime-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Android 18
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-lime-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./android-17-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.vXNojX67-C8Fii2AZUmjkgHaK1%3Fpid%3DApi&f=1&ipt=6d50e6333a8c2967d937b2dc5885f721c5c3e59c145842856530b72b851f777e&ipo=images"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Android 17">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-lime-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Android 17
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-lime-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./broly-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-mpdP6Kpgy8o%2FXDonTbV762I%2FAAAAAAAAAYE%2Fn7CfZM-dZjcXy_0_o8Opw4-_hon7Q765QCKgBGAs%2Fw2280-h2280-p-k-no-nu%2Fbroly-legendary-super-saiyan-dragon-ball-super-broly-38-4k.jpg&f=1&nofb=1&ipt=8952987284f180c1e830cefebac15b3f852d7c2e56dab0bfefe20f6e627a3e26"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Broly">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-lime-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    BROLY (LSSJ)
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-red-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./golden-frieza-page.html" target="_blank" class="block">
+                            <img src="https://i.pinimg.com/736x/85/a1/80/85a180201409111dc920b40068054c38.jpg"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Golden Frieza">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-blue-300 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Golden Frieza
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-red-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./beerus-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2068134.jpg&f=1&nofb=1&ipt=975c7df5297293c26b719d5634884c241381899d68e7fbc37e14c7d405f3dfe9"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Beerus">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    LORD BEERUS
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-violet-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./whis-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.anime-planet.com%2Fimages%2Fcharacters%2Fwhis-53897.jpg%3Ft%3D1439932910&f=1&nofb=1&ipt=8e3e47e25658e5c4a4e480e8c147b06935def96b1007a1190912934ffaa6db30"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Whis">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-violet-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Whis
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-pink-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./goku-black-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F132738.png&f=1&nofb=1&ipt=3509fb1927b25529be0e5142e18ea3fd3e2089ab4006c1f0c652db237c5b1936"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Goku Black">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-pink-500 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    GOKU BLACK
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-orange-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./gogeta-page.html" target="_blank" class="block">
+                            <img src="https://wallpapers.com/images/hd/ssj4-gogeta-charging-attack-duizx1m5zp1wq49v.jpg"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="SSJ4 Gogeta">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-yellow-300 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    GOGETA (Fusion)
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-yellow-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./vegito-page.html" target="_blank" class="block">
+                            <img src="https://4kwallpapers.com/images/wallpapers/vegito-dragon-ball-1920x1080-17072.jpeg"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Vegito">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-lime-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    VEGITO (Fusion)
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-purple-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./zeno-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F3c2de0d3-f642-445f-9852-f3505837f06c%2Fdbpoqod-3c18af4f-ac11-43cc-8ee7-e6dd8b68e99a.png%2Fv1%2Ffill%2Fw_1024%2Ch_1412%2Cstrp%2Fzeno_sama__by_jaredsongohan_dbpoqod-fullview.png%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQxMiIsInBhdGgiOiJcL2ZcLzNjMmRlMGQzLWY2NDItNDQ1Zi05ODUyLWYzNTA1ODM3ZjA2Y1wvZGJwb3FvZC0zYzE4YWY0Zi1hYzExLTQzY2MtOGVlNy1lNmRkOGI2OGU5OWEucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.8URG4gCVJHjnQp1R0-pkEPa1TEtvKS0HpFmKd_WlhwU&f=1&nofb=1&ipt=7440dda620be38ec1fe5615014b5dc0608b4aafa7b85e5692cca05071780ec92"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Zeno">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-purple-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Zeno
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-white/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./daishinkan-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4d%2Fe5%2Fe8%2F4de5e841ca4235754183a05a5eb30372.jpg&f=1&nofb=1&ipt=50d75bb7f5ebd3e9277fc66de90531be6cee9c1bd212729f2194612d533063ef"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="daishinkan">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Daishinkan
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-pink-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./king-kai-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages3.wikia.nocookie.net%2F__cb20100502151706%2Fdragonball%2Fimages%2F6%2F61%2FKingKaiNV.png&f=1&nofb=1&ipt=2ceaae7652c586b795c20639446574d5efcaeea9496de30ee17f967c0c021975"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="King Kai">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-yellow-400 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    King Kai
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li
+                        class="relative group overflow-hidden rounded-xl shadow-2xl shadow-pink-500/50 transition duration-300 transform hover:scale-[1.03]">
+                        <a href="./kaioshin-page.html" target="_blank" class="block">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.PJ5dOO8yMV3rSs_WVV7ueAHaNv%3Fpid%3DApi&f=1&ipt=24bbb780f1418c66e87decf641dce53845a79b05ffd51163e8af0b7abe5b809b&ipo=images"
+                                class="object-cover w-full h-full bg-gray-200 aspect-[5/6] lg:aspect-[2/3] xl:aspect-[3/4] transition duration-500 group-hover:opacity-70"
+                                alt="Kioshin Universe 7">
+                            <div
+                                class="absolute inset-0 flex items-end justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                                <span
+                                    class="text-xl font-extrabold text-green-300 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 uppercase tracking-widest">
+                                    Kioshin
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
                 <div class="text-center mt-16">
                     <a href="#" target="_blank">
                         <button
@@ -245,14 +494,10 @@
                     </a>
                 </div>
             </div>
-
         </section>
 
-
-        <!-- popular tags  -->
         <section class="relative w-full bg-gray-400 bg-dots py-8">
 
-            <!-- Title Overlap -->
             <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
                 <h2
                     class="bg-black text-white sm:text-sm text-xl md:text-4xl font-bold px-6 py-2 uppercase tracking-wider">
@@ -260,7 +505,6 @@
                 </h2>
             </div>
 
-            <!-- Tags List -->
             <div class="flex flex-wrap justify-center gap-4 px-2 mt-6">
                 <span
                     class="px-7 py-1.5 border-3 border-black rounded-full bg-white font-semibold text-sm md:text-base hover:bg-black hover:text-white">BNE</span>
@@ -292,11 +536,10 @@
             </div>
         </section>
 
-        <!-- newsletter  -->
         <section class="w-full mx-auto py-12 px-6 md:px-25 flex flex-col md:flex-row gap-8 bg-white">
 
             <!-- Left Side -->
-            <div class="md:w-1/2 space-y-5">
+            <div class="md:w-1/2 space-y-5 pl-10">
                 <h2 class="text-3xl text-gray-900 font-bold">Follow the official X and be the first to get the latest
                     info!</h2>
                 <p class="text-lg poppins-semibold">Follow @DB_official_en</p>
@@ -307,7 +550,7 @@
             </div>
 
             <!-- Right Side -->
-            <div class="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4 pr-">
                 <img src="https://en.dragon-ball-official.com/assets/img/top/daima_banner.jpg"
                     class="w-full object-cover rounded" alt="">
                 <img src="https://en.dragon-ball-official.com/assets/img/top/bn08.jpg"
@@ -328,7 +571,6 @@
 
     </main>
 
-    <!-- footer  -->
     <footer class="dark:bg-gray-900 dark:text-white">
         <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row lg:justify-between dark:divide-gray-600">
             <div class="flex items-center">
