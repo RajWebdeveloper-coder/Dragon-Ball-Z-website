@@ -2,11 +2,11 @@
 <h1>Dragon Ball Z Website</h1>
 
 <!-- images of website -->
-<img width="1317" height="630" alt="image" src="/images/banner-screenshot.png"/>
+<img width="1317" height="630" alt="image" src="/images/readme-banner.png"/>
 
 
 <!-- puchline -->
-### “Where Power Levels Break Limits!”
+### “Where Power Levels Break Limits!z
 
 ## About & Description
 <pre>This is a beginner-friendly practice project built using HTML and Tailwind CSS with the guidance of ChatGPT. 
