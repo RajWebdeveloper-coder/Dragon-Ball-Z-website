@@ -12,7 +12,7 @@
 <pre>This is a beginner-friendly practice project built using HTML and Tailwind CSS with the guidance of ChatGPT. 
 The website is themed around Dragon Ball Z, showcasing a few key sections to practice layout and styling.</pre>
 
-## 📄 Pages Included  
+## Pages Included  
 * Main Page -> Navigation + Banner + Gallery + Popular Tags + Latest Info + Footer with Social Icons and connect the pages to...
 
 * Characters Page – Basic character showcasece + with lightbox and also the basic things like navbar + Popular Tags + Latest Info + Footer with Social Icons and conect the pages too..
