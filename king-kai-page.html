@@ -26,8 +26,70 @@
 
 <body
     class="bg-cosmic-black text-celestial-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+      <!-- HEADER -->
+<header class="fixed w-full top-0 z-50 bg-white shadow-lg">
+  <div class="container mx-auto flex justify-between items-center px-6 py-3">
+    <!-- Logo -->
+    <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
 
-    <h1 class="text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-kai-green drop-shadow-[0_0_10px_rgba(80,200,120,0.8)]">
+    <!-- Hamburger (Mobile only) -->
+    <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
+      <!-- Hamburger icon -->
+      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav id="menu" class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300" style="max-height: 0;">
+      <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
+        <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
+        <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
+        <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
+        <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
+        <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
+        <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const hamburger = document.getElementById('hamburger');
+
+  function updateMenu() {
+    if (window.innerWidth >= 768) {
+      menu.style.maxHeight = "none";  // desktop shows menu
+      hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+    } else {
+      menu.style.maxHeight = "0px";   // mobile hide menu initially
+    }
+  }
+
+  btn.addEventListener('click', () => {
+    if(window.innerWidth < 768){
+      if(menu.style.maxHeight === "0px" || menu.style.maxHeight === ""){
+        menu.style.maxHeight = menu.scrollHeight + "px";
+        menu.style.textAlign="center";
+        // Change hamburger to X
+        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
+      } else {
+        menu.style.maxHeight = "0px";
+        // Change X back to hamburger
+        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+      }
+    }
+  });
+
+  window.addEventListener('resize', updateMenu);
+
+  // Initialize menu on page load
+  updateMenu();
+</script>
+
+    <h1 class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-kai-green drop-shadow-[0_0_10px_rgba(80,200,120,0.8)]">
         KING KAI
     </h1>
 
