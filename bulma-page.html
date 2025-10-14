@@ -2,81 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Dragon ball Fan, Dragonball UnOfficial,dragon-ball-official,Dragon Ball Z, DBZ, dbz, Father of all Anime, Highlights, Transformations, Iconic Battles">
+    <meta name="author" content="Rajkumar Chaturvedi">
+
+
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/icon">
+
+    <meta name="og:title" content="Dragon Ball Z Highlights | UnOfficial">
+    <meta name="og:description"
+        content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
+    <meta property="og:site_name" content="Rajkumar">
+    <meta property="og:url" content="highlight.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="800">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
     <title>Bulma | The Capsule Corp CEO - Tech Theme</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
-<body 
-    class="bg-blue-900 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+<body class="bg-blue-900 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
 
-          <!-- HEADER -->
-<header class="fixed w-full top-0 z-50 bg-white shadow-lg">
-  <div class="container mx-auto flex justify-between items-center px-6 py-3">
-    <!-- Logo -->
-    <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
+    <!-- HEADER -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6 py-3">
+            <!-- Logo -->
+            <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
 
-    <!-- Hamburger (Mobile only) -->
-    <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+            <!-- Hamburger (Mobile only) -->
+            <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
+                <!-- Hamburger icon -->
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
 
-    <!-- Navigation Menu -->
-    <nav id="menu" class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300" style="max-height: 0;">
-      <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
-        <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
-        <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
-        <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
-        <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
-        <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
-        <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
-      </div>
-    </nav>
-  </div>
-</header>
+            <!-- Navigation Menu -->
+            <nav id="menu"
+                class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300"
+                style="max-height: 0;">
+                <div
+                    class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
+                    <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
+                    <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
+                    <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
+                    <a href="/characters-dbz.html"
+                        class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
+                    <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const hamburger = document.getElementById('hamburger');
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const hamburger = document.getElementById('hamburger');
 
-  function updateMenu() {
-    if (window.innerWidth >= 768) {
-      menu.style.maxHeight = "none";  // desktop shows menu
-      hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-    } else {
-      menu.style.maxHeight = "0px";   // mobile hide menu initially
-    }
-  }
+        function updateMenu() {
+            if (window.innerWidth >= 768) {
+                menu.style.maxHeight = "none";  // desktop shows menu
+                hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+            } else {
+                menu.style.maxHeight = "0px";   // mobile hide menu initially
+            }
+        }
 
-  btn.addEventListener('click', () => {
-    if(window.innerWidth < 768){
-      if(menu.style.maxHeight === "0px" || menu.style.maxHeight === ""){
-        menu.style.maxHeight = menu.scrollHeight + "px";
-        menu.style.textAlign="center";
-        // Change hamburger to X
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
-      } else {
-        menu.style.maxHeight = "0px";
-        // Change X back to hamburger
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-      }
-    }
-  });
+        btn.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+                    menu.style.maxHeight = menu.scrollHeight + "px";
+                    menu.style.textAlign = "center";
+                    // Change hamburger to X
+                    hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
+                } else {
+                    menu.style.maxHeight = "0px";
+                    // Change X back to hamburger
+                    hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+                }
+            }
+        });
 
-  window.addEventListener('resize', updateMenu);
+        window.addEventListener('resize', updateMenu);
 
-  // Initialize menu on page load
-  updateMenu();
-</script>
+        // Initialize menu on page load
+        updateMenu();
+    </script>
 
 
     <!-- Title and Subtitle (Tech CEO Theme: Pink and Cyan) -->
-    <h1 class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-pink-400 drop-shadow-xl shadow-cyan-400">
+    <h1
+        class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-pink-400 drop-shadow-xl shadow-cyan-400">
         BULMA – THE EARTH'S GENIUS!
     </h1>
 
@@ -88,29 +120,35 @@
 
         <!-- Main Description Box (Theme: Focus on her intelligence and inventions) -->
         <div class="bg-gray-800/70 p-6 rounded-xl border-4 border-pink-500 shadow-2xl shadow-pink-700/50 flex-1">
-            <h2 class="text-3xl font-extrabold text-cyan-400 mb-4 border-b-2 border-pink-500 pb-2">The Brains Behind the Power</h2>
+            <h2 class="text-3xl font-extrabold text-cyan-400 mb-4 border-b-2 border-pink-500 pb-2">The Brains Behind the
+                Power</h2>
             <p class="text-gray-200 text-lg leading-relaxed">
-                Bulma Briefs, the brilliant daughter of Dr. Briefs and CEO of **Capsule Corp**, is the technological backbone of the Z Fighters. Her invention of the **Dragon Radar** was the catalyst for the entire *Dragon Ball* saga. Though she lacks physical power, her intelligence, charisma, and ability to build everything from time machines to new battle armor make her the single most important human on Earth. She is the proud wife of Vegeta and the mother of Trunks and Bulla, using her resources and genius to support the planet's defense.
+                Bulma Briefs, the brilliant daughter of Dr. Briefs and CEO of **Capsule Corp**, is the technological
+                backbone of the Z Fighters. Her invention of the **Dragon Radar** was the catalyst for the entire
+                *Dragon Ball* saga. Though she lacks physical power, her intelligence, charisma, and ability to build
+                everything from time machines to new battle armor make her the single most important human on Earth. She
+                is the proud wife of Vegeta and the mother of Trunks and Bulla, using her resources and genius to
+                support the planet's defense.
             </p>
         </div>
 
         <!-- Side Status Box (Innovation and Wealth Theme) -->
         <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900 p-6 rounded-xl border-4 border-cyan-400 text-center text-cyan-400
             shadow-xl shadow-pink-500/70 ring-2 ring-cyan-400">
-            
+
             <p class="text-xl font-bold tracking-widest uppercase text-pink-400">Innovation Rating</p>
-            
+
             <p class="text-7xl font-black text-white my-4">
                 100%
             </p>
-            
+
             <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
                 <!-- Innovation Success Bar -->
                 <div class="h-full bg-cyan-400 rounded-full w-[100%]"></div>
             </div>
-            
+
             <p class="text-sm text-gray-400 mt-2">Constantly upgrading and improving everything.</p>
-            
+
             <div class="mt-6 border-t border-gray-700 pt-4">
                 <p class="text-lg font-semibold text-pink-400">Signature Invention:</p>
                 <p class="text-2xl font-extrabold text-cyan-500">Dragon Radar!</p>

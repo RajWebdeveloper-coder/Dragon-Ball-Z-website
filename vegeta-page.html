@@ -2,79 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Dragon ball Fan, Dragonball UnOfficial,dragon-ball-official,Dragon Ball Z, DBZ, dbz, Father of all Anime, Highlights, Transformations, Iconic Battles">
+    <meta name="author" content="Rajkumar Chaturvedi">
+
+
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/icon">
+
+    <meta name="og:title" content="Dragon Ball Z Highlights | UnOfficial">
+    <meta name="og:description"
+        content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
+    <meta property="og:site_name" content="Rajkumar">
+    <meta property="og:url" content="highlight.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="800">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
     <title>Vegeta | The Saiyan Prince - Pride Theme</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body 
-    class="bg-indigo-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
-      <!-- HEADER -->
-<header class="fixed w-full top-0 z-50 bg-white shadow-lg">
-  <div class="container mx-auto flex justify-between items-center px-6 py-3">
-    <!-- Logo -->
-    <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
+<body class="bg-indigo-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+    <!-- HEADER -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6 py-3">
+            <!-- Logo -->
+            <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
 
-    <!-- Hamburger (Mobile only) -->
-    <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+            <!-- Hamburger (Mobile only) -->
+            <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
+                <!-- Hamburger icon -->
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
 
-    <!-- Navigation Menu -->
-    <nav id="menu" class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300" style="max-height: 0;">
-      <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
-        <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
-        <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
-        <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
-        <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
-        <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
-        <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
-      </div>
-    </nav>
-  </div>
-</header>
+            <!-- Navigation Menu -->
+            <nav id="menu"
+                class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300"
+                style="max-height: 0;">
+                <div
+                    class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
+                    <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
+                    <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
+                    <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
+                    <a href="/characters-dbz.html"
+                        class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
+                    <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const hamburger = document.getElementById('hamburger');
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const hamburger = document.getElementById('hamburger');
 
-  function updateMenu() {
-    if (window.innerWidth >= 768) {
-      menu.style.maxHeight = "none";  // desktop shows menu
-      hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-    } else {
-      menu.style.maxHeight = "0px";   // mobile hide menu initially
-    }
-  }
+        function updateMenu() {
+            if (window.innerWidth >= 768) {
+                menu.style.maxHeight = "none";  // desktop shows menu
+                hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+            } else {
+                menu.style.maxHeight = "0px";   // mobile hide menu initially
+            }
+        }
 
-  btn.addEventListener('click', () => {
-    if(window.innerWidth < 768){
-      if(menu.style.maxHeight === "0px" || menu.style.maxHeight === ""){
-        menu.style.maxHeight = menu.scrollHeight + "px";
-        menu.style.textAlign="center";
-        // Change hamburger to X
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
-      } else {
-        menu.style.maxHeight = "0px";
-        // Change X back to hamburger
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-      }
-    }
-  });
+        btn.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+                    menu.style.maxHeight = menu.scrollHeight + "px";
+                    menu.style.textAlign = "center";
+                    // Change hamburger to X
+                    hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
+                } else {
+                    menu.style.maxHeight = "0px";
+                    // Change X back to hamburger
+                    hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+                }
+            }
+        });
 
-  window.addEventListener('resize', updateMenu);
+        window.addEventListener('resize', updateMenu);
 
-  // Initialize menu on page load
-  updateMenu();
-</script>
+        // Initialize menu on page load
+        updateMenu();
+    </script>
 
     <!-- Title and Subtitle (Saiyan Prince Theme: Blue and Yellow) -->
-    <h1 class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-blue-500 drop-shadow-xl shadow-yellow-400">
+    <h1
+        class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-blue-500 drop-shadow-xl shadow-yellow-400">
         VEGETA – THE PRINCE OF ALL SAIYANS!
     </h1>
 
@@ -86,29 +117,35 @@
 
         <!-- Main Description Box (Theme: Focus on his origin, pride, and rivalry) -->
         <div class="bg-gray-900/70 p-6 rounded-xl border-4 border-blue-500 shadow-2xl shadow-blue-700/50 flex-1">
-            <h2 class="text-3xl font-extrabold text-yellow-400 mb-4 border-b-2 border-blue-500 pb-2">The Earth's Unwavering Elite</h2>
+            <h2 class="text-3xl font-extrabold text-yellow-400 mb-4 border-b-2 border-blue-500 pb-2">The Earth's
+                Unwavering Elite</h2>
             <p class="text-gray-200 text-lg leading-relaxed">
-                Vegeta, the Prince of the fallen Saiyan race, carries the crushing weight of his royal heritage and the drive for absolute supremacy. Initially arriving on Earth as a ruthless villain, his intense **rivalry with Kakarot (Goku)** pushed him toward an almost maniacal pursuit of strength. Though his path is marked by pride and arrogance, his ultimate transformation into a dedicated protector of Earth and his family—**Bulma** and **Trunks**—shows a deep, albeit complicated, heart. His sheer will to surpass Goku makes him an indispensable guardian of the cosmos.
+                Vegeta, the Prince of the fallen Saiyan race, carries the crushing weight of his royal heritage and the
+                drive for absolute supremacy. Initially arriving on Earth as a ruthless villain, his intense **rivalry
+                with Kakarot (Goku)** pushed him toward an almost maniacal pursuit of strength. Though his path is
+                marked by pride and arrogance, his ultimate transformation into a dedicated protector of Earth and his
+                family—**Bulma** and **Trunks**—shows a deep, albeit complicated, heart. His sheer will to surpass Goku
+                makes him an indispensable guardian of the cosmos.
             </p>
         </div>
 
         <!-- Side Status Box (Rivalry and Power Theme) -->
         <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900 p-6 rounded-xl border-4 border-yellow-400 text-center text-yellow-400
             shadow-xl shadow-blue-500/70 ring-2 ring-yellow-400">
-            
+
             <p class="text-xl font-bold tracking-widest uppercase text-blue-400">Rivalry Status</p>
-            
+
             <p class="text-7xl font-black text-white my-4">
                 TIE
             </p>
-            
+
             <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
                 <!-- Power Bar based on his current rivalry percentage -->
                 <div class="h-full bg-yellow-400 rounded-full w-[99%]"></div>
             </div>
-            
+
             <p class="text-sm text-gray-400 mt-2">Always training. Will surpass Kakarot.</p>
-            
+
             <div class="mt-6 border-t border-gray-700 pt-4">
                 <p class="text-lg font-semibold text-blue-400">Signature Technique:</p>
                 <p class="text-2xl font-extrabold text-yellow-500">FINAL FLASH!</p>
@@ -120,8 +157,8 @@
     <!-- Video Embed (Vegeta Video - UPDATED) -->
     <div
         class="mt-12 w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-8 border-blue-500 shadow-2xl shadow-blue-500/80 transition-transform hover:scale-[1.01] duration-300">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/uV_p_OWMdgo"
-            title="Best of Vegeta's Speeches" frameborder="0"
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/uV_p_OWMdgo" title="Best of Vegeta's Speeches"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
     </div>

@@ -2,79 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Dragon ball Fan, Dragonball UnOfficial,dragon-ball-official,Dragon Ball Z, DBZ, dbz, Father of all Anime, Highlights, Transformations, Iconic Battles">
+    <meta name="author" content="Rajkumar Chaturvedi">
+
+
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.ico" type="image/icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Dragonball.png" type="image/icon">
+
+    <meta name="og:title" content="Dragon Ball Z Highlights | UnOfficial">
+    <meta name="og:description"
+        content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
+    <meta property="og:site_name" content="Rajkumar">
+    <meta property="og:url" content="highlight.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="800">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
     <title>Chi-Chi | The Martial Arts Princess - OG Theme</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body 
-    class="bg-green-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
-      <!-- HEADER -->
-<header class="fixed w-full top-0 z-50 bg-white shadow-lg">
-  <div class="container mx-auto flex justify-between items-center px-6 py-3">
-    <!-- Logo -->
-    <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
+<body class="bg-green-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+    <!-- HEADER -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6 py-3">
+            <!-- Logo -->
+            <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
 
-    <!-- Hamburger (Mobile only) -->
-    <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+            <!-- Hamburger (Mobile only) -->
+            <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
+                <!-- Hamburger icon -->
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
 
-    <!-- Navigation Menu -->
-    <nav id="menu" class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300" style="max-height: 0;">
-      <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
-        <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
-        <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
-        <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
-        <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
-        <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
-        <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
-      </div>
-    </nav>
-  </div>
-</header>
+            <!-- Navigation Menu -->
+            <nav id="menu"
+                class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300"
+                style="max-height: 0;">
+                <div
+                    class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
+                    <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
+                    <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
+                    <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
+                    <a href="/characters-dbz.html"
+                        class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
+                    <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const hamburger = document.getElementById('hamburger');
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const hamburger = document.getElementById('hamburger');
 
-  function updateMenu() {
-    if (window.innerWidth >= 768) {
-      menu.style.maxHeight = "none";  // desktop shows menu
-      hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-    } else {
-      menu.style.maxHeight = "0px";   // mobile hide menu initially
-    }
-  }
+        function updateMenu() {
+            if (window.innerWidth >= 768) {
+                menu.style.maxHeight = "none";  // desktop shows menu
+                hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+            } else {
+                menu.style.maxHeight = "0px";   // mobile hide menu initially
+            }
+        }
 
-  btn.addEventListener('click', () => {
-    if(window.innerWidth < 768){
-      if(menu.style.maxHeight === "0px" || menu.style.maxHeight === ""){
-        menu.style.maxHeight = menu.scrollHeight + "px";
-        menu.style.textAlign="center";
-        // Change hamburger to X
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
-      } else {
-        menu.style.maxHeight = "0px";
-        // Change X back to hamburger
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-      }
-    }
-  });
+        btn.addEventListener('click', () => {
+            if (window.innerWidth < 768) {
+                if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+                    menu.style.maxHeight = menu.scrollHeight + "px";
+                    menu.style.textAlign = "center";
+                    // Change hamburger to X
+                    hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
+                } else {
+                    menu.style.maxHeight = "0px";
+                    // Change X back to hamburger
+                    hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+                }
+            }
+        });
 
-  window.addEventListener('resize', updateMenu);
+        window.addEventListener('resize', updateMenu);
 
-  // Initialize menu on page load
-  updateMenu();
-</script>
+        // Initialize menu on page load
+        updateMenu();
+    </script>
 
     <!-- Title and Subtitle (Martial Arts Theme: Bright Orange and Emerald Green) -->
-    <h1 class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-orange-500 drop-shadow-xl shadow-emerald-500">
+    <h1
+        class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-orange-500 drop-shadow-xl shadow-emerald-500">
         CHI-CHI – THE OX PRINCESS!
     </h1>
 
@@ -86,29 +117,35 @@
 
         <!-- Main Description Box (Theme: Focus on her origin and strength) -->
         <div class="bg-gray-800/70 p-6 rounded-xl border-4 border-orange-500 shadow-2xl shadow-orange-700/50 flex-1">
-            <h2 class="text-3xl font-extrabold text-emerald-400 mb-4 border-b-2 border-orange-500 pb-2">The Earth's Underrated Fighter</h2>
+            <h2 class="text-3xl font-extrabold text-emerald-400 mb-4 border-b-2 border-orange-500 pb-2">The Earth's
+                Underrated Fighter</h2>
             <p class="text-gray-200 text-lg leading-relaxed">
-                Chi-Chi, the **Ox-King's Daughter**, debuted as a formidable warrior, capable of striking fear into her enemies with her sharp helmet and powerful fighting style. Though her focus shifted to academics for her children, she remains one of the Earth's strongest human women. She is a **World Tournament Finalist**, a true martial arts prodigy, and her strength—both physical and psychological—is the driving force that keeps the legendary Son family grounded. Her history proves she is capable of handling any threat, domestic or cosmic.
+                Chi-Chi, the **Ox-King's Daughter**, debuted as a formidable warrior, capable of striking fear into her
+                enemies with her sharp helmet and powerful fighting style. Though her focus shifted to academics for her
+                children, she remains one of the Earth's strongest human women. She is a **World Tournament Finalist**,
+                a true martial arts prodigy, and her strength—both physical and psychological—is the driving force that
+                keeps the legendary Son family grounded. Her history proves she is capable of handling any threat,
+                domestic or cosmic.
             </p>
         </div>
 
         <!-- Side Status Box (Martial Arts Ranking Theme) -->
         <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900 p-6 rounded-xl border-4 border-emerald-500 text-center text-emerald-500
             shadow-xl shadow-orange-500/70 ring-2 ring-emerald-500">
-            
+
             <p class="text-xl font-bold tracking-widest uppercase text-orange-400">World Tournament Ranking</p>
-            
+
             <p class="text-7xl font-black text-white my-4">
                 #23
             </p>
-            
+
             <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
                 <!-- Power Bar based on her tournament strength -->
                 <div class="h-full bg-orange-500 rounded-full w-[85%]"></div>
             </div>
-            
+
             <p class="text-sm text-gray-400 mt-2">A true champion. Never give up!</p>
-            
+
             <div class="mt-6 border-t border-gray-700 pt-4">
                 <p class="text-lg font-semibold text-emerald-400">Signature Technique:</p>
                 <p class="text-2xl font-extrabold text-orange-500">Head-Butt!</p>
@@ -120,8 +157,8 @@
     <!-- Video Embed (Chi-Chi Video) -->
     <div
         class="mt-12 w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-8 border-orange-500 shadow-2xl shadow-orange-500/80 transition-transform hover:scale-[1.01] duration-300">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/C2DEo5brxUk"
-            title="Chi-Chi's Best Moments" frameborder="0"
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/C2DEo5brxUk" title="Chi-Chi's Best Moments"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
     </div>
