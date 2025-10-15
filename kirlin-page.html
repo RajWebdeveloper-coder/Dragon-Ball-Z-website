@@ -2,171 +2,186 @@
 <html lang="en">
 
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Dragon ball Fan, Dragonball UnOfficial,dragon-ball-official,Dragon Ball Z, DBZ, dbz, Father of all Anime, Highlights, Transformations, Iconic Battles">
-    <meta name="author" content="Rajkumar Chaturvedi">
+
+  <!-- Basic SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
+  <meta name="keywords"
+    content="Dragon Ball Fan, Dragonball UnOfficial, Dragon Ball Z, DBZ, Father of all Anime, Highlights, Transformations, Iconic Battles">
+  <meta name="author" content="Rajkumar Chaturvedi">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta property="og:url" content="https://dragon-ball-z-website.vercel.app/highlight.html">
+  <meta property="og:image" content="https://dragon-ball-z-website.vercel.app/images/dragonball-og.png">
+
+  <!-- Open Graph for social media -->
+  <meta property="og:title" content="Dragon Ball Z Highlights | UnOfficial">
+  <meta property="og:description"
+    content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
+  <meta property="og:site_name" content="Dragon Ball Z UnOfficial">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="800">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/Dragonball.ico">
+  <link rel="icon" type="image/png" sizes="64x64" href="./images/logo.png">
+
+  <!-- Styles & Tailwind -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <title>Krillin | The Strongest Human</title>
 
 
-    <link rel="shortcut icon" href="Dragonball.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="Dragonball.ico" type="image/icon">
-    <link rel="shortcut icon" href="Dragonball.png" type="image/x-icon">
-    <link rel="shortcut icon" href="Dragonball.png" type="image/icon">
-
-    <meta name="og:title" content="Dragon Ball Z Highlights | UnOfficial">
-    <meta name="og:description"
-        content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
-    <meta property="og:site_name" content="Rajkumar">
-    <meta property="og:url" content="highlight.html">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1500">
-    <meta property="og:image:height" content="800">
-    <meta name="robots" content="index,follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-
-                <title>Krillin | The Strongest Human</title>
-                
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <script>
-        // Custom Tailwind configuration for Krillin's colors
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'krillin-orange': '#F7882F', // Signature Gi Orange
-                'destructo-yellow': '#FFD700', // Destructo Disc Yellow/Gold
-                'monk-brown': '#654321',       // Earthy Brown for monk robes/contrast
-                'human-blue': '#1e40af',       // Blue for Earth/human resilience
-              }
-            }
+  <script>
+    // Custom Tailwind configuration for Krillin's colors
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'krillin-orange': '#F7882F', // Signature Gi Orange
+            'destructo-yellow': '#FFD700', // Destructo Disc Yellow/Gold
+            'monk-brown': '#654321',       // Earthy Brown for monk robes/contrast
+            'human-blue': '#1e40af',       // Blue for Earth/human resilience
           }
         }
-    </script>
-</head>
-
-<body
-    class="bg-gray-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
-      <!-- HEADER -->
-<header class="fixed w-full top-0 z-50 bg-white shadow-lg">
-  <div class="container mx-auto flex justify-between items-center px-6 py-3">
-    <!-- Logo -->
-    <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
-
-    <!-- Hamburger (Mobile only) -->
-    <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-
-    <!-- Navigation Menu -->
-    <nav id="menu" class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300" style="max-height: 0;">
-      <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
-        <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
-        <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
-        <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
-        <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
-        <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
-        <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const hamburger = document.getElementById('hamburger');
-
-  function updateMenu() {
-    if (window.innerWidth >= 768) {
-      menu.style.maxHeight = "none";  // desktop shows menu
-      hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-    } else {
-      menu.style.maxHeight = "0px";   // mobile hide menu initially
-    }
-  }
-
-  btn.addEventListener('click', () => {
-    if(window.innerWidth < 768){
-      if(menu.style.maxHeight === "0px" || menu.style.maxHeight === ""){
-        menu.style.maxHeight = menu.scrollHeight + "px";
-        menu.style.textAlign="center";
-        // Change hamburger to X
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
-      } else {
-        menu.style.maxHeight = "0px";
-        // Change X back to hamburger
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
       }
     }
-  });
+  </script>
+</head>
 
-  window.addEventListener('resize', updateMenu);
+<body class="bg-gray-950 text-white font-sans min-h-screen flex flex-col items-center p-6 bg-cover bg-fixed">
+  <!-- HEADER -->
+  <header class="fixed w-full top-0 z-50 bg-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      <!-- Logo -->
+      <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
 
-  // Initialize menu on page load
-  updateMenu();
-</script>
+      <!-- Hamburger (Mobile only) -->
+      <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
+        <!-- Hamburger icon -->
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-    <h1 class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-krillin-orange drop-shadow-[0_0_10px_rgba(247,136,47,0.8)]">
-        KRILLIN – THE STRONGEST HUMAN
-    </h1>
-
-    <p class="text-2xl mt-3 mb-8 text-center font-bold tracking-wider text-destructo-yellow">
-        Master Roshi's Student | Earth's Defender | Goku's Best Friend
-    </p>
-
-    <div class="max-w-4xl w-full flex flex-col lg:flex-row gap-8">
-
-        <div class="bg-gray-800/80 p-6 rounded-xl border-4 border-krillin-orange shadow-2xl shadow-krillin-orange/50 flex-1 transition-all duration-500 hover:bg-gray-700/80">
-            <h2 class="text-3xl font-extrabold text-destructo-yellow mb-4 border-b-2 border-krillin-orange pb-2">Heart, Resilience, and Power</h2>
-            <p class="text-gray-200 text-lg leading-relaxed">
-                **Krillin** may be the strongest human on Earth, but his true strength lies in his **unbreakable spirit and loyalty**. Starting as Goku's competitive rival, he quickly became his closest lifelong friend and an indispensable member of the Z Fighters. Despite often facing enemies vastly superior in power, Krillin **never gives up**. He is renowned for his ingenious, tricky fighting style, his **solar flare** technique, and his razor-sharp **Destructo Disc**, an attack feared by even the most powerful villains, proving that courage often triumphs over raw power levels.
-            </p>
+      <!-- Navigation Menu -->
+      <nav id="menu"
+        class="absolute text-yellow-500 top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300"
+        style="max-height: 0;">
+        <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
+          <a href="index.html" class="hover:text-red-500 transition uppercase">Home</a>
+          <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
+          <a href="/highlight.html" class="hover:text-red-500 transition uppercase ">Highlights</a>
+          <a href="/videos.html" class="hover:text-red-500 transition uppercase">Videos</a>
+          <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase text-purple-700">Characters</a>
+          <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
         </div>
-
-        <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900/80 p-6 rounded-xl border-4 border-destructo-yellow text-center text-destructo-yellow
-            shadow-xl shadow-krillin-orange/70 ring-2 ring-destructo-yellow">
-            
-            <p class="text-xl font-bold tracking-widest uppercase text-human-blue">Greatest Achievement</p>
-            
-            <p class="text-6xl font-black text-monk-brown my-4">
-                HUMAN
-            </p>
-            
-            <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
-                <div class="h-full bg-destructo-yellow rounded-full w-[100%] animate-pulse"></div>
-            </div>
-            
-            <p class="text-sm text-gray-400 mt-2">Maximum power achieved by a pure human.</p>
-            
-            <div class="mt-6 border-t border-gray-700 pt-4">
-                <p class="text-lg font-semibold text-human-blue">Signature Attack:</p>
-                <p class="text-2xl font-extrabold text-destructo-yellow">Destructo Disc</p>
-                <p class="text-sm font-semibold text-gray-500">(Kienzan)</p>
-            </div>
-        </div>
-
+      </nav>
     </div>
+  </header>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const hamburger = document.getElementById('hamburger');
+
+    function updateMenu() {
+      if (window.innerWidth >= 768) {
+        menu.style.maxHeight = "none";  // desktop shows menu
+        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+      } else {
+        menu.style.maxHeight = "0px";   // mobile hide menu initially
+      }
+    }
+
+    btn.addEventListener('click', () => {
+      if (window.innerWidth < 768) {
+        if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+          menu.style.maxHeight = menu.scrollHeight + "px";
+          menu.style.textAlign = "center";
+          // Change hamburger to X
+          hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
+        } else {
+          menu.style.maxHeight = "0px";
+          // Change X back to hamburger
+          hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+        }
+      }
+    });
+
+    window.addEventListener('resize', updateMenu);
+
+    // Initialize menu on page load
+    updateMenu();
+  </script>
+
+  <h1
+    class="pt-5 text-7xl md:text-8xl font-black mt-12 text-center tracking-tighter uppercase text-krillin-orange drop-shadow-[0_0_10px_rgba(247,136,47,0.8)]">
+    KRILLIN – THE STRONGEST HUMAN
+  </h1>
+
+  <p class="text-2xl mt-3 mb-8 text-center font-bold tracking-wider text-destructo-yellow">
+    Master Roshi's Student | Earth's Defender | Goku's Best Friend
+  </p>
+
+  <div class="max-w-4xl w-full flex flex-col lg:flex-row gap-8">
 
     <div
-        class="mt-12 w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-8 border-krillin-orange shadow-2xl shadow-destructo-yellow/80 transition-transform hover:scale-[1.01] duration-300">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/6Vo9bxC_P1Q?si=hmqPL-gUC00jyO-t"
-            title="Krillin's Most Badass Moments" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+      class="bg-gray-800/80 p-6 rounded-xl border-4 border-krillin-orange shadow-2xl shadow-krillin-orange/50 flex-1 transition-all duration-500 hover:bg-gray-700/80">
+      <h2 class="text-3xl font-extrabold text-destructo-yellow mb-4 border-b-2 border-krillin-orange pb-2">Heart,
+        Resilience, and Power</h2>
+      <p class="text-gray-200 text-lg leading-relaxed">
+        **Krillin** may be the strongest human on Earth, but his true strength lies in his **unbreakable spirit and
+        loyalty**. Starting as Goku's competitive rival, he quickly became his closest lifelong friend and an
+        indispensable member of the Z Fighters. Despite often facing enemies vastly superior in power, Krillin **never
+        gives up**. He is renowned for his ingenious, tricky fighting style, his **solar flare** technique, and his
+        razor-sharp **Destructo Disc**, an attack feared by even the most powerful villains, proving that courage often
+        triumphs over raw power levels.
+      </p>
     </div>
 
-    <footer class="mt-16 text-gray-400 text-md text-center border-t border-gray-700 pt-4 max-w-4xl w-full">
-        &copy; 2025 Earth's Martial Arts School | Motto: **Never Stop Fighting**
-    </footer>
+    <div class="flex-shrink-0 w-full lg:w-72 bg-gray-900/80 p-6 rounded-xl border-4 border-destructo-yellow text-center text-destructo-yellow
+            shadow-xl shadow-krillin-orange/70 ring-2 ring-destructo-yellow">
+
+      <p class="text-xl font-bold tracking-widest uppercase text-human-blue">Greatest Achievement</p>
+
+      <p class="text-6xl font-black text-monk-brown my-4">
+        HUMAN
+      </p>
+
+      <div class="h-4 bg-gray-600 rounded-full overflow-hidden mt-4">
+        <div class="h-full bg-destructo-yellow rounded-full w-[100%] animate-pulse"></div>
+      </div>
+
+      <p class="text-sm text-gray-400 mt-2">Maximum power achieved by a pure human.</p>
+
+      <div class="mt-6 border-t border-gray-700 pt-4">
+        <p class="text-lg font-semibold text-human-blue">Signature Attack:</p>
+        <p class="text-2xl font-extrabold text-destructo-yellow">Destructo Disc</p>
+        <p class="text-sm font-semibold text-gray-500">(Kienzan)</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div
+    class="mt-12 w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-8 border-krillin-orange shadow-2xl shadow-destructo-yellow/80 transition-transform hover:scale-[1.01] duration-300">
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/6Vo9bxC_P1Q?si=hmqPL-gUC00jyO-t"
+      title="Krillin's Most Badass Moments" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <footer class="mt-16 text-gray-400 text-md text-center border-t border-gray-700 pt-4 max-w-4xl w-full">
+    &copy; 2025 Earth's Martial Arts School | Motto: **Never Stop Fighting**
+  </footer>
 
 </body>
 
