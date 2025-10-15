@@ -20,7 +20,7 @@
     content="Relive the most legendary moments, battles, and transformations from Dragon Ball Z.">
   <meta property="og:site_name" content="Dragon Ball Z UnOfficial">
   <meta property="og:type" content="website">
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:type" content="https://www.pngwing.com/ar/free-png-pyovl">
   <meta property="og:image:width" content="1500">
   <meta property="og:image:height" content="800">
 
@@ -28,301 +28,308 @@
   <link rel="icon" type="image/x-icon" href="./images/Dragonball.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="./images/logo.png">
 
-      <!-- Styles & Tailwind -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Styles & Tailwind -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
-    <title>HIGHLIGHTS | DRAGON BALL Z UNOFFICIAL SITE</title>
+  <title>HIGHLIGHTS | DRAGON BALL Z UNOFFICIAL SITE</title>
 
 </head>
 
 <body class="bg-gray-100">
 
   <!-- HEADER -->
-<header class="fixed w-full top-0 z-50 bg-white shadow-lg">
-  <div class="container mx-auto flex justify-between items-center px-6 py-0">
-    <!-- Logo -->
-      <a href=""><img src="images/dbz-logo.png" alt="Logo" class="w-50 h-25 rounded-lg"></a>
+  <header class="fixed w-full top-0 z-50 bg-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      <!-- Logo -->
+      <img src="images/dragon-ball-super.png" alt="Logo" class="w-40 h-auto rounded-lg">
 
-    <!-- Hamburger (Mobile only) -->
-    <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
 
-    <!-- Navigation Menu -->
-    <nav id="menu" class="absolute top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300" style="max-height: 0;">
-      <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
-        <a href="index.html" class="hover:text-red-500 transition uppercase ">Home</a>
-        <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
-        <a href="/highlight.html" class="hover:text-red-500 transition uppercase text-purple-700">Highlights</a>
-        <a href="/videos.html" class="hover:text-red-500 transition uppercase ">Videos</a>
-        <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase">Characters</a>
-        <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
-      </div>
-    </nav>
-  </div>
-</header>
+      <!-- Hamburger (Mobile only) -->
+      <button id="menu-btn" aria-controls="menu" aria-expanded="false" class="md:hidden p-2 focus:outline-none">
+        <!-- Hamburger icon -->
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const hamburger = document.getElementById('hamburger');
+      <!-- Navigation Menu -->
+      <nav id="menu"
+        class="absolute top-full left-0 w-full bg-white md:static md:flex md:justify-between md:w-auto md:items-center overflow-hidden transition-all duration-300"
+        style="max-height: 0;">
+        <div class="flex flex-col md:flex-row text-lg font-semibold p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-8">
+          <a href="index.html" class="hover:text-red-500 transition uppercase ">Home</a>
+          <a href="/news.html" class="hover:text-red-500 transition uppercase">News</a>
+          <a href="/highlight.html" class="hover:text-red-500 transition uppercase text-purple-700">Highlights</a>
+          <a href="/videos.html" class="hover:text-red-500 transition uppercase ">Videos</a>
+          <a href="/characters-dbz.html" class="hover:text-red-500 transition uppercase">Characters</a>
+          <a href="/about.html" class="hover:text-red-500 transition uppercase">About</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  function updateMenu() {
-    if (window.innerWidth >= 768) {
-      menu.style.maxHeight = "none";  // desktop shows menu
-      hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
-    } else {
-      menu.style.maxHeight = "0px";   // mobile hide menu initially
-    }
-  }
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const hamburger = document.getElementById('hamburger');
 
-  btn.addEventListener('click', () => {
-    if(window.innerWidth < 768){
-      if(menu.style.maxHeight === "0px" || menu.style.maxHeight === ""){
-        menu.style.maxHeight = menu.scrollHeight + "px";
-        menu.style.textAlign="center";
-        // Change hamburger to X
-        hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
-      } else {
-        menu.style.maxHeight = "0px";
-        // Change X back to hamburger
+    function updateMenu() {
+      if (window.innerWidth >= 768) {
+        menu.style.maxHeight = "none";  // desktop shows menu
         hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+      } else {
+        menu.style.maxHeight = "0px";   // mobile hide menu initially
       }
     }
-  });
 
-  window.addEventListener('resize', updateMenu);
+    btn.addEventListener('click', () => {
+      if (window.innerWidth < 768) {
+        if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+          menu.style.maxHeight = menu.scrollHeight + "px";
+          menu.style.textAlign = "center";
+          // Change hamburger to X
+          hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 6l12 12M6 18L18 6" />`;
+        } else {
+          menu.style.maxHeight = "0px";
+          // Change X back to hamburger
+          hamburger.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />`;
+        }
+      }
+    });
 
-  // Initialize menu on page load
-  updateMenu();
-</script>
+    window.addEventListener('resize', updateMenu);
 
-    <main class="mt-20">
-        <section
-            class="relative h-screen w-full flex items-center justify-center bg-gray-400 overflow-hidden shadow-2xl">
+    // Initialize menu on page load
+    updateMenu();
+  </script>
 
-            <div
-                class="absolute inset-0 bg-cover bg-center  bg-[url(images/goku_ssj_blue_kioken.jpg)]">
+  <main class="mt-20">
+    <section class="relative h-screen w-full flex items-center justify-center bg-gray-400 overflow-hidden shadow-2xl">
+
+      <div class="absolute inset-0 bg-cover bg-center  bg-[url(images/goku_ssj_blue_kioken.jpg)]">
+      </div>
+
+      <div class="relative z-10 text-center text-white px-6">
+        <h1
+          class="text-6xl md:text-8xl font-black mb-4 tracking-tighter uppercase drop-shadow-[0_0_20px_rgba(255,255,0,0.8)]">
+          MOVIE HIGHLIGHTS
+        </h1>
+        <p class="text-xl md:text-2xl font-bold text-black">
+          The most explosive battles from the Dragon Ball Cinematic Universe.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
+            Iconic Film Showdowns
+          </h2>
+          <p class="text-lg text-gray-700">Relive the greatest non-canon and canon movie fights that define
+            Dragon Ball.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-green-600 transition duration-500 transform hover:scale-[1.09]">
+            <div class="aspect-video overflow-hidden">
+              <img src="https://wallpaperaccess.com/full/2116201.png" alt="Goku vs Legendary Broly"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
             </div>
-
-            <div class="relative z-10 text-center text-white px-6">
-                <h1
-                    class="text-6xl md:text-8xl font-black mb-4 tracking-tighter uppercase drop-shadow-[0_0_20px_rgba(255,255,0,0.8)]">
-                    MOVIE HIGHLIGHTS
-                </h1>
-                <p class="text-xl md:text-2xl font-bold text-black">
-                    The most explosive battles from the Dragon Ball Cinematic Universe.
-                </p>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-green-700 mb-2">Broly: Legendary Super Saiyan</h3>
+              <p class="text-gray-700">The first appearance of the **Legendary Super Saiyan**, an
+                unstoppable force that required a fused effort to defeat.</p>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#LSSJBroly</span>
             </div>
-        </section>
+          </div>
 
-        <section class="py-16 md:py-24 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-5xl font-extrabold text-gray-900 uppercase tracking-wider mb-2">
-                        Iconic Film Showdowns
-                    </h2>
-                    <p class="text-lg text-gray-700">Relive the greatest non-canon and canon movie fights that define
-                        Dragon Ball.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <div
-                        class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-green-600 transition duration-500 transform hover:scale-[1.09]">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://wallpaperaccess.com/full/2116201.png" alt="Goku vs Legendary Broly"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-3xl font-bold text-green-700 mb-2">Broly: Legendary Super Saiyan</h3>
-                            <p class="text-gray-700">The first appearance of the **Legendary Super Saiyan**, an
-                                unstoppable force that required a fused effort to defeat.</p>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#LSSJBroly</span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-purple-600 transition duration-500 transform hover:scale-[1.03]">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F29e04197-041b-4715-ba54-2d9132ce1b19%2Fdff2uwm-e09a0292-e314-4ed8-ab98-9748420607bf.png%2Fv1%2Ffill%2Fw_1192%2Ch_670%2Cq_70%2Cstrp%2Fdbz_coolers_revenge_poster_by_rcm2_dff2uwm-pre.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMjllMDQxOTctMDQxYi00NzE1LWJhNTQtMmQ5MTMyY2UxYjE5XC9kZmYydXdtLWUwOWEwMjkyLWUzMTQtNGVkOC1hYjk4LTk3NDg0MjA2MDdiZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.w7j00yi0_scL0WiVj-xYq-nOrHGQPW6lbC5dd2t5MZs&f=1&nofb=1&ipt=34b333706c2dc17cb5685b79b65be590329acc99a1c35f179187eb1c9371fd2d"
-                                alt="Goku vs Cooler Final Form"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-3xl font-bold text-purple-700 mb-2">Cooler's Revenge (Final Form)</h3>
-                            <p class="text-gray-700">Frieza's elder brother, **Cooler**, introduced his fifth form,
-                                pushing Goku's Super Saiyan to its absolute limit.</p>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#FriezaFamily</span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-yellow-500 transition duration-500 transform hover:scale-[1.03]">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe1.pxfuel.com%2Fdesktop-wallpaper%2F1023%2F319%2Fdesktop-wallpaper-dragon-ball-z-fusion-reborn-janemba-janemba.jpg&f=1&nofb=1&ipt=ad3c34f5d59487aec6bc0ad79486c4e8bfe6cb877f349c2dfc52c221affcbae5"
-                                alt="Gogeta vs Janemba"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-3xl font-bold text-yellow-600 mb-2">Fusion Reborn (Gogeta)</h3>
-                            <p class="text-gray-700">The spectacular debut of **Gogeta** (Goku + Vegeta Fusion) against
-                                the demon, **Janemba**, showcasing incredible power.</p>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#Gogeta</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5 ">
-
-                    <div
-                        class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-green-600 transition duration-500 transform hover:scale-[1.09]">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.5-yKcmlUbEaFdmHhpG1wCAHaDt%3Fcb%3D12%26pid%3DApi&f=1&ipt=3482979d3173e3f467e89b379d1ba2693b68a32a3d6d25b8a80fe407bc7ea9db&ipo=images"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-3xl font-bold text-green-700 mb-2">Son Family: Broly's Final Stand</h3>
-                            <p class="text-gray-700">The unforgettable scene from Broly: Second Coming, marking the
-                                legendary Super Saiyan's ultimate defeat through the combined strength of the Saiyan
-                                family.</p>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#LSSJBroly</span>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#SonFamily</span>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#Warriors</span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-purple-600 transition duration-500 transform hover:scale-[1.03]">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.teahub.io%2Fphotos%2Ffull%2F301-3012673_majin-vegeta-sacrifice.jpg&f=1&nofb=1&ipt=fff37827324bf359d0a24fa0222df562a49120f358262d8bf42eb1047c93110a"
-                                alt="Majin Vegeta Sacrifice"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-3xl font-bold text-purple-700 mb-2">Buu Saga: Majin Vegeta Sacrifice</h3>
-                            <p class="text-gray-700">**Vegeta** performs the most defining heroic act of his life: his
-                                last attempt at self-destruction to save Earth, in the Buu Arc.</p>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#Magin-Vegeta</span>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#Magin-Buu</span>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#Buu-Saga</span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-yellow-500 transition duration-500 transform hover:scale-[1.03]">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FVm5Oj7uopEI%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=b870a6d41f10e2dcc16715a414511734c037b455606d58bbe7b6d336bcca8fcb"
-                                alt="Gogeta vs Janemba"
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-3xl font-bold text-yellow-600 mb-2">Mastered Ultra Instinct's Limit</h3>
-                            <p class="text-gray-700">The final, legendary clash between **Goku (MUI)** and **Jiren** in
-                                the Tournament of Power's climax.</p>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#UltraInstinct</span>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#Full-Power</span>
-                            <span
-                                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#Jiren</span>
-                        </div>
-                    </div>
-                </div>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-purple-600 transition duration-500 transform hover:scale-[1.03]">
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F29e04197-041b-4715-ba54-2d9132ce1b19%2Fdff2uwm-e09a0292-e314-4ed8-ab98-9748420607bf.png%2Fv1%2Ffill%2Fw_1192%2Ch_670%2Cq_70%2Cstrp%2Fdbz_coolers_revenge_poster_by_rcm2_dff2uwm-pre.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMjllMDQxOTctMDQxYi00NzE1LWJhNTQtMmQ5MTMyY2UxYjE5XC9kZmYydXdtLWUwOWEwMjkyLWUzMTQtNGVkOC1hYjk4LTk3NDg0MjA2MDdiZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.w7j00yi0_scL0WiVj-xYq-nOrHGQPW6lbC5dd2t5MZs&f=1&nofb=1&ipt=34b333706c2dc17cb5685b79b65be590329acc99a1c35f179187eb1c9371fd2d"
+                alt="Goku vs Cooler Final Form"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
             </div>
-
-        </section>
-
-        <section class="py-5 text-white mb-5">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl font-extrabold text-yellow-500 uppercase tracking-wider mb-8">
-                    Esports & Gaming Events
-                </h2>
-                <p class="text-lg text-red-400 mb-10">Highlights from the official Dragon Ball FighterZ and Dokkan
-                    Battle World Championships.</p>
-
-                <div class="flex flex-wrap justify-center gap-6">
-
-                    <div
-                        class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-gray-800 rounded-lg shadow-xl border-b-4 border-red-500 hover:bg-gray-700 transition">
-                        <i class="fa-solid fa-gamepad text-5xl text-red-500 mb-3"></i>
-                        <h3 class="text-2xl font-bold mb-1">DBFZ World Tour</h3>
-                        <p class="text-gray-300">The legendary Grand Finals of the World Tournament. **Dominance**!</p>
-                        <a href="#" class="text-red-400 hover:text-red-300 text-sm mt-2 block">Watch Recap <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-
-                    <div
-                        class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-gray-800 rounded-lg shadow-xl border-b-4 border-blue-500 hover:bg-gray-700 transition">
-                        <i class="fa-solid fa-mobile-screen-button text-5xl text-blue-500 mb-3"></i>
-                        <h3 class="text-2xl font-bold mb-1">Dokkan 7th Anniv.</h3>
-                        <p class="text-gray-300">New **LR Fusions** revealed during the official live stream.</p>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm mt-2 block">See Reveals <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-
-                    <div
-                        class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-gray-800 rounded-lg shadow-xl border-b-4 border-yellow-500 hover:bg-gray-700 transition">
-                        <i class="fa-solid fa-bolt-lightning text-5xl text-yellow-500 mb-3"></i>
-                        <h3 class="text-2xl font-bold mb-1">Xenoverse 2: New Pack</h3>
-                        <p class="text-gray-300">The reveal trailer for the latest **Future Saga DLC** content.</p>
-                        <a href="#" class="text-yellow-400 hover:text-yellow-300 text-sm mt-2 block">View Trailer <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-purple-700 mb-2">Cooler's Revenge (Final Form)</h3>
+              <p class="text-gray-700">Frieza's elder brother, **Cooler**, introduced his fifth form,
+                pushing Goku's Super Saiyan to its absolute limit.</p>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#FriezaFamily</span>
             </div>
-        </section>
+          </div>
 
-
-        <section class="w-full mx-auto py-12 px-6 md:px-25 flex flex-col md:flex-row gap-8 bg-white">
-
-            <!-- Left Side -->
-            <div class="md:w-1/2 space-y-5">
-                <h2 class="text-3xl text-gray-900 font-bold">Follow the official X and be the first to get the latest
-                    info!</h2>
-                <p class="text-lg poppins-semibold">Follow @DB_official_en</p>
-                <p class="text-lg poppins-semibold font-normal">
-                    To view this content, please allow our site to use cookies. <br>
-                    Click here to adjust your Cookie Settings.
-                </p>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-yellow-500 transition duration-500 transform hover:scale-[1.03]">
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe1.pxfuel.com%2Fdesktop-wallpaper%2F1023%2F319%2Fdesktop-wallpaper-dragon-ball-z-fusion-reborn-janemba-janemba.jpg&f=1&nofb=1&ipt=ad3c34f5d59487aec6bc0ad79486c4e8bfe6cb877f349c2dfc52c221affcbae5"
+                alt="Gogeta vs Janemba"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
             </div>
-
-            <!-- Right Side -->
-            <div class="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/daima_banner.jpg"
-                    class="w-full object-cover rounded" alt="">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/bn08.jpg"
-                    class="w-full object-cover rounded" alt="">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/bn05.png"
-                    class="w-full object-cover rounded" alt="">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/bn06.png"
-                    class="w-full object-cover rounded" alt="">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/bn10.png"
-                    class="w-full object-cover rounded" alt="">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/bn09.png"
-                    class="w-full object-cover rounded" alt="">
-                <img src="https://en.dragon-ball-official.com/assets/img/top/squadra_banner.png"
-                    class="w-full object-cover rounded" alt="">
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-yellow-600 mb-2">Fusion Reborn (Gogeta)</h3>
+              <p class="text-gray-700">The spectacular debut of **Gogeta** (Goku + Vegeta Fusion) against
+                the demon, **Janemba**, showcasing incredible power.</p>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#Gogeta</span>
             </div>
+          </div>
+        </div>
 
-        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5 ">
 
-    </main>
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-green-600 transition duration-500 transform hover:scale-[1.09]">
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.5-yKcmlUbEaFdmHhpG1wCAHaDt%3Fcb%3D12%26pid%3DApi&f=1&ipt=3482979d3173e3f467e89b379d1ba2693b68a32a3d6d25b8a80fe407bc7ea9db&ipo=images"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-green-700 mb-2">Son Family: Broly's Final Stand</h3>
+              <p class="text-gray-700">The unforgettable scene from Broly: Second Coming, marking the
+                legendary Super Saiyan's ultimate defeat through the combined strength of the Saiyan
+                family.</p>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#LSSJBroly</span>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#SonFamily</span>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-green-100 text-green-800 rounded-full">#Warriors</span>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-purple-600 transition duration-500 transform hover:scale-[1.03]">
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.teahub.io%2Fphotos%2Ffull%2F301-3012673_majin-vegeta-sacrifice.jpg&f=1&nofb=1&ipt=fff37827324bf359d0a24fa0222df562a49120f358262d8bf42eb1047c93110a"
+                alt="Majin Vegeta Sacrifice"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-purple-700 mb-2">Buu Saga: Majin Vegeta Sacrifice</h3>
+              <p class="text-gray-700">**Vegeta** performs the most defining heroic act of his life: his
+                last attempt at self-destruction to save Earth, in the Buu Arc.</p>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#Magin-Vegeta</span>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#Magin-Buu</span>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full">#Buu-Saga</span>
+            </div>
+          </div>
+
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-2xl border-t-8 border-yellow-500 transition duration-500 transform hover:scale-[1.03]">
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FVm5Oj7uopEI%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=b870a6d41f10e2dcc16715a414511734c037b455606d58bbe7b6d336bcca8fcb"
+                alt="Gogeta vs Janemba"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl font-bold text-yellow-600 mb-2">Mastered Ultra Instinct's Limit</h3>
+              <p class="text-gray-700">The final, legendary clash between **Goku (MUI)** and **Jiren** in
+                the Tournament of Power's climax.</p>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#UltraInstinct</span>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#Full-Power</span>
+              <span
+                class="inline-block mt-3 px-3 py-1 text-sm font-semibold bg-yellow-100 text-yellow-800 rounded-full">#Jiren</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="py-5 text-white mb-5">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-extrabold text-yellow-500 uppercase tracking-wider mb-8">
+          Esports & Gaming Events
+        </h2>
+        <p class="text-lg text-red-400 mb-10">Highlights from the official Dragon Ball FighterZ and Dokkan
+          Battle World Championships.</p>
+
+        <div class="flex flex-wrap justify-center gap-6">
+
+          <div
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-gray-800 rounded-lg shadow-xl border-b-4 border-red-500 hover:bg-gray-700 transition">
+            <i class="fa-solid fa-gamepad text-5xl text-red-500 mb-3"></i>
+            <h3 class="text-2xl font-bold mb-1">DBFZ World Tour</h3>
+            <p class="text-gray-300">The legendary Grand Finals of the World Tournament. **Dominance**!</p>
+            <a href="#" class="text-red-400 hover:text-red-300 text-sm mt-2 block">Watch Recap <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-gray-800 rounded-lg shadow-xl border-b-4 border-blue-500 hover:bg-gray-700 transition">
+            <i class="fa-solid fa-mobile-screen-button text-5xl text-blue-500 mb-3"></i>
+            <h3 class="text-2xl font-bold mb-1">Dokkan 7th Anniv.</h3>
+            <p class="text-gray-300">New **LR Fusions** revealed during the official live stream.</p>
+            <a href="#" class="text-blue-400 hover:text-blue-300 text-sm mt-2 block">See Reveals <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-gray-800 rounded-lg shadow-xl border-b-4 border-yellow-500 hover:bg-gray-700 transition">
+            <i class="fa-solid fa-bolt-lightning text-5xl text-yellow-500 mb-3"></i>
+            <h3 class="text-2xl font-bold mb-1">Xenoverse 2: New Pack</h3>
+            <p class="text-gray-300">The reveal trailer for the latest **Future Saga DLC** content.</p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-300 text-sm mt-2 block">View Trailer <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="w-full mx-auto py-12 px-6 md:px-25 flex flex-col md:flex-row gap-8 bg-white">
+
+      <!-- Left Side -->
+      <div class="md:w-1/2 space-y-5">
+        <h2 class="text-3xl text-gray-900 font-bold">Follow the official X and be the first to get the latest
+          info!</h2>
+        <p class="text-lg poppins-semibold">Follow @DB_official_en</p>
+        <p class="text-lg poppins-semibold font-normal">
+          To view this content, please allow our site to use cookies. <br>
+          Click here to adjust your Cookie Settings.
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/daima_banner.jpg"
+          class="w-full object-cover rounded" alt="">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/bn08.jpg" class="w-full object-cover rounded"
+          alt="">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/bn05.png" class="w-full object-cover rounded"
+          alt="">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/bn06.png" class="w-full object-cover rounded"
+          alt="">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/bn10.png" class="w-full object-cover rounded"
+          alt="">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/bn09.png" class="w-full object-cover rounded"
+          alt="">
+        <img src="https://en.dragon-ball-official.com/assets/img/top/squadra_banner.png"
+          class="w-full object-cover rounded" alt="">
+      </div>
+
+    </section>
+
+  </main>
 
   <footer class="dark:bg-gray-900 dark:text-white">
     <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row lg:justify-between dark:divide-gray-600">
