@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!--Home-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/</loc>
+    <lastmod>2026-06-04</lastmod>
+  </url>
+
+  <!--News-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/news.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+  <!--Characters-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/characters.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+  <!--Highlight-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/highlight.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+  <!--Videos-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/videos.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+    <!--About-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/about.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+                                <!--Characters-->
+
+<!--android-17-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/android-17.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--android-18-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/android-18.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--bardock-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/bardock-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--beerus-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/beerus-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--broly-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/broly-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--bulma-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/bulma-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--chichi-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/chichi-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--daishinkan-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/daishinkan-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--future-trunks-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/future-trunks-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--gogeta-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/gogeta-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--goku-black-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/goku-black-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--goku-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/goku-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--golden-frieza-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/golden-frieza-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--goten-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/goten-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--kaioshin-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/kaioshin-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+  <!--kid-trunks-page-->
+  <url>
+    <loc>https://dragon-ball-z-website.vercel.app/kid-trunks-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--King-kai-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/king-kai-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--krillin-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/krillin-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--piccolo-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/piccolo-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--son-gohan-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/son-gohan-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--vegeta-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/vegeta-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--vegito-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/vegito-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--whis-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/whis-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+<!--zeno-page-->
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/zeno-page.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+    <url>
+    <loc>https://dragon-ball-z-website.vercel.app/about.html</loc>
+    <lastmod>2026-01-16</lastmod>
+  </url>
+
+
+</urlset>
